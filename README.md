@@ -151,7 +151,7 @@ Probar que funciona en `pages/index.vue`:
   Artist albums (20) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
   ```
 
-![Imagen consola JS](readme-images/spotify-test.jpg?raw=true)
+![Imagen consola JS](md-images/spotify-test.jpg?raw=true)
 
 Un ejemplo de la prueba de Spotify API se encuentra en la rama [nuxt0](https://github.com/cristinafsanz/taller-nuxt/tree/nuxt0).
 

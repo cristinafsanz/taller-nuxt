@@ -1,0 +1,28 @@
+{
+  "name": "Wecodefy",
+  "version": "1.0.0",
+  "description": "My glorious Nuxt.js project",
+  "author": "Cristina Fernández Sanz",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@nuxtjs/dotenv": "^1.3.0",
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.0.0",
+    "spotify-web-api-js": "^1.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "babel-eslint": "^8.2.1",
+    "eslint": "^5.0.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-vue": "^4.0.0"
+  }
+}
