@@ -12,7 +12,7 @@
 - [x] Opción 2: Usar [Codesandbox](https://codesandbox.io/s/github/nuxt/codesandbox-nuxt)
 - [x] Spotify API.
 
-[x] Conectar con API Spotify para ver qué pantallas se podrían mostrar en la aplicación.
+[x] Rama "nuxt0": Conectar con API Spotify para ver qué pantallas se podrían mostrar en la aplicación.
 - [x] Crear un Client ID en el [Dashboard](https://developer.spotify.com/dashboard/applications):
     - App Name: Wecodefy
     - Description: Get your statistics from last year in a similar way as spotify wrappers.
@@ -23,11 +23,19 @@
 - Implicit Grant: [Example](https://gist.github.com/igorPhelype/68239ecab9afcc50230ce0c61c3bac2f), [Authorization Guide](https://developer.spotify.com/documentation/general/guides/authorization-guide/).
 
 [ ] Rama en GitHub por cada funcionalidad de la aplicación (nuxt1, ...nuxtn):
-- [ ] Componentes y layout con parte estática. Global CSS (metodología BEM). Nuxt-link. Transición entre páginas.
-- [ ] SEO y meta tags. Mostrar code-splitting.
-- [ ] Spotify API. Plugins.
-- [ ] Vuex guardar estado distintas páginas.
-- [ ] Despliegue estático GitHub Pages o Netlify.
+- [ ] Rama "nuxt1": Componentes y layout con parte estática. Global CSS (metodología BEM). Nuxt-link. Transición entre páginas. SEO y meta tags. Mostrar code-splitting.
+    - [ ] Imagen Wecodefy: Transparente para poderlo poner rosa, blanco y negro.
+    - [ ] Layout: Imagen, menú footer, botón subir/bajar numerado y bajar doble flecha.
+    - [ ] Global CSS.
+    - [ ] Colores con variables CSS. Mirar si en Chrome, Firefox y Safari se ven bien.
+    - [ ] Maquetación de cada página con metodología BEM.
+    - [ ] Nuxt-link para moverse entre páginas (ver todos los botones)
+    - [ ] Transición páginas.
+    - [ ] Añadir SEO y meta tags.
+    - [ ] Mostrar code-splitting.
+    - [ ] Apuntar en README todos los pasos a partir de layout.
+- [ ] Rama "nuxt2: Spotify API. Plugins. Vuex guardar estado distintas páginas.
+- [ ] Rama "nuxt3": Despliegue estático GitHub Pages o Netlify.
 
 [ ] Hacer la misma aplicación en Codesandbox para apuntar los pasos en README.
 - Opción 2: Usar editor online CodeSandbox
