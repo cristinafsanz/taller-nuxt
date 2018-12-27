@@ -57,3 +57,7 @@
 
 ![Inspeccionar elemento canvas](md-images/all-canvas.jpg?raw=true)
 
+## Vídeo de animaciones de pantallas
+
+[Vídeo en Useloom](https://www.useloom.com/share/fb89bcc54e8644ddb5a17ff6acee5d37)
+

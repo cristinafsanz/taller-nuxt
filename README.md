@@ -53,30 +53,47 @@ Se va a usar la herramienta de scaffolding [create-nuxt-app](https://nuxtjs.org/
 
 - Se debería ver una página de inicio parecida a ésta:
 
-![Imagen página inicio con título y logo](readme-images/home-page.jpg?raw=true)
+![Imagen página inicio con título y logo](md-images/home-page.jpg?raw=true)
 
 ### Instalación Paso 2
 
 - Tener creada cuenta en Spotify (free o premium).
 
-- Ir al [Dashboard](https://developer.spotify.com/dashboard/) y crear un client ID. Apuntar Client ID y Client Secret para usarlos en el taller.
+- Ir al [Dashboard](https://developer.spotify.com/dashboard/) y crear un client ID.
 
-- Clonar proyecto en local (en otra ruta distinta al proyecto) para obtener un token: [Spotify Web API Token generator](https://github.com/JMPerez/spotify-web-api-token):
+- Editar settings en el Dashboard y añadir como Redirect URIs: 'http://localhost:8888' y 'http://localhost:8888/callback'.
+
+- Clonar proyecto en local (en otra ruta distinta al proyecto) para obtener un token: [Spotify Accounts Authentication Examples](https://github.com/spotify/web-api-auth-examples):
 
     ```
-    git clone https://github.com/JMPerez/spotify-web-api-token.git
-    cd spotify-web-api-token
+    git clone https://github.com/spotify/web-api-auth-examples.git
+    cd web-api-auth-examples
     npm install
     ```
 
-- Exportar Client ID y Client Secret y arrancar el proyecto:
-    ```
-    export SPOTIFY_CLIENT_ID=<your_client_id>
-    export SPOTIFY_CLIENT_SECRET=<your_client_secret>
-    npm start
-    ```
+- Modificar Client ID y Client Secret con los que aparecen en el Dashboard en `authorization_code/app.js`. Añadir 'http://localhost:8888/callback' como 'redirect_uri'.
 
-- Acceder a http://localhost:3000/token para coger el token. Apuntarlo para añadirlo en el fichero `.env`.
+- Añadir en scope en `authorization_code/app.js`: 'user-top-read' (para recoger el top de artistas del current user).
+
+- Ejecutar app.js:
+
+```
+cd authorization_code
+$ node app.js
+```
+
+- Ir a http://localhost:8888/
+
+- Log in with Spotify
+
+- Al hacer login te da tus datos, el access token y el refresh token. Haz click en "Obten new token" y apunta el access token desde Network (llamada "refresh_token") para añadirlo en el fichero .env en el siguiente paso.
+
+Ej.
+
+```
+access_token: "BQAxVEKKOV2Ee7byea2KriV4VluYffmllwPhAePEL1c2uu3jmkQXimqRDHaUSXZeNc-tkclrenqMQHDHXfTUZUDjTQOpiSEyUDE4qmFIT_PcVB0yVRRm9fpcUeMsoTDYOAk29Bf7rq1-5hk43Gzx5Ck-AH57pOE9DPPk1Q"
+
+```
 
 #### Instalar dotenv
 

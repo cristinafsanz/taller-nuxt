@@ -33,14 +33,38 @@ export default {
   },
 
   mounted() {
-    const token = process.env.SPOTIFY_ACCESS_TOKEN;
+    const token = process.env.SPOTIFY_ACCESS_TOKEN
     if (token) {
       spotifyApi.setAccessToken(token);
     }
-    // Get Elvis' albums
+    // Get Elvis' albums (initial test)
     spotifyApi.getArtistAlbums('43ZHCT0cAZBISjO8DG9PnE').then(
       function(data) {
         console.log('Artist albums', data.items)
+      },
+      function(err) {
+        console.error(err)
+      }
+    )
+    // Get my top Artists
+    spotifyApi.getMyTopArtists({
+      limit: 5,
+      time_range: 'medium_term'
+    }).then(
+      function(data) {
+        console.log('getMyTopArtists', data)
+      },
+      function(err) {
+        console.error(err)
+      }
+    )
+    // Get my top tracks
+    spotifyApi.getMyTopTracks({
+      limit: 5,
+      time_range: 'medium_term'
+    }).then(
+      function(data) {
+        console.log('getMyTopTracks', data)
       },
       function(err) {
         console.error(err)

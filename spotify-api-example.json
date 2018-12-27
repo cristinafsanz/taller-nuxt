@@ -1,0 +1,242 @@
+{
+  "username": "XXX",
+  "reg_country": "ES",
+  "product": "free",
+  "firsts": {
+    "song": {
+      "song_title": "The Theory of Everything",
+      "artist_name": "Jóhann Jóhannsson",
+      "album_image": "https://i.scdn.co/image/550cd4097b7e6106495a6c4bbeed4daef2891bf7",
+      "track_url": "https://open.spotify.com/track/1Wd7EwZcoAfCAEi9FF6G6b",
+      "track_uri": "spotify:track:1Wd7EwZcoAfCAEi9FF6G6b",
+      "genre_color": {
+        "genre": "Classical",
+        "main_color": "#B49BC8",
+        "secondary_color1": "#503750",
+        "secondary_color2": "#A0C3D2"
+      }
+    },
+    "new_artist": {
+      "artist_id": "spotify:artist:55s643XPig11NyYM8do64C",
+      "artist_name": "Dolores O'Riordan",
+      "artist_img": "https://i.scdn.co/image/8bbf7a8a38fde7ba0ffb3d7c8e7b872db2edd64a",
+      "artist_uri": "spotify:track:55s643XPig11NyYM8do64C",
+      "artist_url": "https://open.spotify.com/artist/55s643XPig11NyYM8do64C",
+      "genre_color": {
+        "genre": "Undefined",
+        "main_color": "#191414",
+        "secondary_color1": "#9BF0E1",
+        "secondary_color2": "#FFFFFF"
+      }
+    }
+  },
+  "totals": {
+    "total_milliseconds": 652375069,
+    "percent_more": 23
+  },
+  "top_artist": {
+    "artist": {
+      "artist_id": "spotify:artist:4MXUO7sVCaFgFjoTI5ox5c",
+      "artist_name": "Sufjan Stevens",
+      "artist_img": "https://i.scdn.co/image/0548c39dccf31b7ee591acfd3146c95b7cfd25ea",
+      "artist_uri": "4MXUO7sVCaFgFjoTI5ox5c",
+      "artist_url": "https://open.spotify.com/artist/4MXUO7sVCaFgFjoTI5ox5c",
+      "genre_color": {
+        "genre": "Indie",
+        "main_color": "#4100F5",
+        "secondary_color1": "#FFCDD2",
+        "secondary_color2": "#A0C3D2"
+      }
+    },
+    "percentile": 7,
+    "twitter_username": "",
+    "milliseconds_played": 8623274
+  },
+  "charts": {
+    "top_artists": [{
+      "artist_id": "4MXUO7sVCaFgFjoTI5ox5c",
+      "artist_name": "Sufjan Stevens",
+      "artist_img": "https://i.scdn.co/image/0548c39dccf31b7ee591acfd3146c95b7cfd25ea",
+      "artist_uri": "spotify:artist:4MXUO7sVCaFgFjoTI5ox5c",
+      "artist_url": "https://open.spotify.com/artist/4MXUO7sVCaFgFjoTI5ox5c",
+      "genre_color": {
+        "genre": "Indie",
+        "main_color": "#4100F5",
+        "secondary_color1": "#FFCDD2",
+        "secondary_color2": "#A0C3D2"
+      }
+    }, {
+      "artist_id": "0CEc9lghR3yQlU6W4jL1nj",
+      "artist_name": "Kisses",
+      "artist_img": "https://i.scdn.co/image/5286bf231935e1b1a2e154499e4ce1fd44592fce",
+      "artist_uri": "spotify:artist:0CEc9lghR3yQlU6W4jL1nj",
+      "artist_url": "https://open.spotify.com/artist/0CEc9lghR3yQlU6W4jL1nj",
+      "genre_color": {
+        "genre": "Dance/Electronic",
+        "main_color": "#9BF0E1",
+        "secondary_color1": "#1E3264",
+        "secondary_color2": "#A0C3D2"
+      }
+    }, {
+      "artist_id": "6M2wZ9GZgrQXHCFfjv46we",
+      "artist_name": "Dua Lipa",
+      "artist_img": "https://i.scdn.co/image/7a957e4544ecf57f090c402987d306c927c60297",
+      "artist_uri": "spotify:artist:6M2wZ9GZgrQXHCFfjv46we",
+      "artist_url": "https://open.spotify.com/artist/6M2wZ9GZgrQXHCFfjv46we",
+      "genre_color": {
+        "genre": "Pop",
+        "main_color": "#C3F0C8",
+        "secondary_color1": "#2D46B9",
+        "secondary_color2": "#FFCDD2"
+      }
+    }, {
+      "artist_id": "7t0rwkOPGlDPEhaOcVtOt9",
+      "artist_name": "The Cranberries",
+      "artist_img": "https://i.scdn.co/image/143c01f407ed64a4b3bcbc92d24c05ef80981251",
+      "artist_uri": "spotify:artist:7t0rwkOPGlDPEhaOcVtOt9",
+      "artist_url": "https://open.spotify.com/artist/7t0rwkOPGlDPEhaOcVtOt9",
+      "genre_color": {
+        "genre": "Pop",
+        "main_color": "#C3F0C8",
+        "secondary_color1": "#2D46B9",
+        "secondary_color2": "#FFCDD2"
+      }
+    }, {
+      "artist_id": "58R31AvN8JMHM7xkNpVLjX",
+      "artist_name": "Alexis Ffrench",
+      "artist_img": "https://i.scdn.co/image/ead881ed94ab53fe3bd8ad94360a8e1ec6bc9960",
+      "artist_uri": "spotify:artist:58R31AvN8JMHM7xkNpVLjX",
+      "artist_url": "https://open.spotify.com/artist/58R31AvN8JMHM7xkNpVLjX",
+      "genre_color": {
+        "genre": "Pop",
+        "main_color": "#C3F0C8",
+        "secondary_color1": "#2D46B9",
+        "secondary_color2": "#FFCDD2"
+      }
+    }],
+    "top_songs": [{
+      "song_title": "Funny Heartbeat",
+      "artist_name": "Kisses",
+      "album_image": "https://i.scdn.co/image/1bc72a70113c623e6ba6b9a78d55ad2e199bf19d",
+      "track_url": "https://open.spotify.com/track/1z0bQtWZP9n48ibj8W7m0w",
+      "track_uri": "spotify:track:1z0bQtWZP9n48ibj8W7m0w",
+      "genre_color": {
+        "genre": "Dance/Electronic",
+        "main_color": "#9BF0E1",
+        "secondary_color1": "#1E3264",
+        "secondary_color2": "#A0C3D2"
+      }
+    }, {
+      "song_title": "IDGAF",
+      "artist_name": "Dua Lipa",
+      "album_image": "https://i.scdn.co/image/80ed68cfbca71e8026e89e8cb603e2a0c9ffa554",
+      "track_url": "https://open.spotify.com/track/76cy1WJvNGJTj78UqeA5zr",
+      "track_uri": "spotify:track:76cy1WJvNGJTj78UqeA5zr",
+      "genre_color": {
+        "genre": "Pop",
+        "main_color": "#C3F0C8",
+        "secondary_color1": "#2D46B9",
+        "secondary_color2": "#FFCDD2"
+      }
+    }, {
+      "song_title": "Eugene",
+      "artist_name": "Sufjan Stevens",
+      "album_image": "https://i.scdn.co/image/a0779f588d1f1f50921a083f5a1fc4217f0ddf7d",
+      "track_url": "https://open.spotify.com/track/161iDrAGFqkzeXSaxworBs",
+      "track_uri": "spotify:track:161iDrAGFqkzeXSaxworBs",
+      "genre_color": {
+        "genre": "Pop",
+        "main_color": "#C3F0C8",
+        "secondary_color1": "#2D46B9",
+        "secondary_color2": "#FFCDD2"
+      }
+    }, {
+      "song_title": "Should Have Known Better",
+      "artist_name": "Sufjan Stevens",
+      "album_image": "https://i.scdn.co/image/a0779f588d1f1f50921a083f5a1fc4217f0ddf7d",
+      "track_url": "https://open.spotify.com/track/5I6y1KWmUoV5YCaIEcs1qs",
+      "track_uri": "spotify:track:5I6y1KWmUoV5YCaIEcs1qs",
+      "genre_color": {
+        "genre": "Indie",
+        "main_color": "#4100F5",
+        "secondary_color1": "#FFCDD2",
+        "secondary_color2": "#A0C3D2"
+      }
+    }, {
+      "song_title": "The Theory of Everything",
+      "artist_name": "Jóhann Jóhannsson",
+      "album_image": "https://i.scdn.co/image/550cd4097b7e6106495a6c4bbeed4daef2891bf7",
+      "track_url": "https://open.spotify.com/track/1Wd7EwZcoAfCAEi9FF6G6b",
+      "track_uri": "spotify:track:1Wd7EwZcoAfCAEi9FF6G6b",
+      "genre_color": {
+        "genre": "Classical",
+        "main_color": "#B49BC8",
+        "secondary_color1": "#503750",
+        "secondary_color2": "#A0C3D2"
+      }
+    }],
+    "top_genres": ["Pop", "Rock", "Indie", "Dance/Electronic", "Punk"]
+  },
+  "oldest_song": {
+    "year": 1956,
+    "song": {
+      "song_title": "Goldberg Variations, BWV 988: Aria - Remastered",
+      "artist_name": "Glenn Gould",
+      "album_image": "https://i.scdn.co/image/db29136dd9a201e0059b4342f1a47807a5ff737b",
+      "track_url": "https://open.spotify.com/track/61CTXQ09mPLPmzdgEdeStO",
+      "track_uri": "spotify:track:61CTXQ09mPLPmzdgEdeStO",
+      "genre_color": {
+        "genre": "Classical",
+        "main_color": "#B49BC8",
+        "secondary_color1": "#503750",
+        "secondary_color2": "#A0C3D2"
+      }
+    }
+  },
+  "smart_speaker": {
+    "ms_played": 0
+  },
+  "horoscope": {
+    "horoscope": "Leo",
+    "horoscope_artists": ["Dua Lipa"]
+  },
+  "top_podcasts": [],
+  "playlists": {
+    "tastebreakers": {
+      "playlist_title": "Tastebreakers",
+      "playlist_img": "https://i.scdn.co/image/6bbe02800bf3689c236bb62bee35acb639a34d3d",
+      "playlist_url": "https://open.spotify.com/user/spotify/playlist/37i9dQZF1Ej25q3GxhpZZT",
+      "playlist_uri": "spotify:user:spotify:playlist:37i9dQZF1Ej25q3GxhpZZT",
+      "artist_uri": null
+    },
+    "top100": {
+      "playlist_title": "Your Top Songs 2018",
+      "playlist_img": "https://i.scdn.co/image/5286bf231935e1b1a2e154499e4ce1fd44592fce",
+      "playlist_url": "https://open.spotify.com/user/spotify/playlist/37i9dQZF1EjiH8oSpFArp7",
+      "playlist_uri": "spotify:user:spotify:playlist:37i9dQZF1EjiH8oSpFArp7",
+      "artist_uri": "spotify:artist:0CEc9lghR3yQlU6W4jL1nj"
+    }
+  },
+  "premium": {
+    "followers": {
+      "followers_count": 0,
+      "percentile": 10,
+      "playlist_uri": "",
+      "playlist_image": []
+    },
+    "hipster": {
+      "percent_more": 58,
+      "artist_name": "Kisses",
+      "artist_uri": "spotify:artist:0CEc9lghR3yQlU6W4jL1nj",
+      "artist_img": "https://i.scdn.co/image/5286bf231935e1b1a2e154499e4ce1fd44592fce",
+      "album_uri": "spotify:album:70JhuOosLLj2tePw1e7RPK",
+      "album_url": "https://open.spotify.com/album/70JhuOosLLj2tePw1e7RPK"
+    },
+    "microgenre": {
+      "microgenre": "Modern Rock",
+      "microgenre_image": "https://i.scdn.co/image/275bf9e5027e11c6e1a72c81aecc0eac8f13c00f",
+      "playlist_uri": "spotify:user:thesoundsofspotify:playlist:5HufsVvMDoIPr9tGzoJpW0",
+      "playlist_url": "https://open.spotify.com/user/thesoundsofspotify/playlist/5HufsVvMDoIPr9tGzoJpW0"
+    }
+  }
+}
