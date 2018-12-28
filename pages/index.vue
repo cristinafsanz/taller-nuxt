@@ -33,9 +33,23 @@ export default {
   },
 
   mounted() {
-    const token = process.env.SPOTIFY_ACCESS_TOKEN
-    if (token) {
-      spotifyApi.setAccessToken(token);
+    // https://gist.github.com/igorPhelype/68239ecab9afcc50230ce0c61c3bac2f
+    const callback_url = window.location.href
+    const client_id = '9ce0744ff4a04334966cbcf3fb7e312d'
+    const api_url = `https://accounts.spotify.com/authorize?client_id=${client_id}&response_type=token&redirect_uri=${callback_url}`;
+    let access_token
+    let hash
+    if(!window.location.hash) {
+        window.location.replace(api_url)
+    } else {
+        const url = window.location.href
+        hash = url.split('#')[1]
+        hash = hash.split('&')[0]
+        hash = hash.split('=')[1]
+    }
+    access_token = hash
+    if (access_token) {
+      spotifyApi.setAccessToken(access_token)
     }
     // Get Elvis' albums (initial test)
     spotifyApi.getArtistAlbums('43ZHCT0cAZBISjO8DG9PnE').then(

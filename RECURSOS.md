@@ -22,15 +22,17 @@
 
 ## Spotify plugins
 
-- [Vue Spotify](https://www.npmjs.com/package/vue-spotify)
 
-- [Spotify Web API Node](https://github.com/thelinmichael/spotify-web-api-node)
 
 - [Spotify Web API JS](https://github.com/JMPerez/spotify-web-api-js)
 
 - [Spotify Web API Token generator](https://github.com/JMPerez/spotify-web-api-token)
 
-- [Spotify connect API](https://jmperezperez.com/spotify-connect-api/)
+- [Spotify Accounts Authentication Examples](https://github.com/spotify/web-api-auth-examples)
+
+- [Spotify Web API Node](https://github.com/thelinmichael/spotify-web-api-node)
+
+- [Vue Spotify](https://www.npmjs.com/package/vue-spotify)
 
 ## VueJS-spotify projects
 

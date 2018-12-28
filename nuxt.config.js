@@ -1,4 +1,3 @@
-require('dotenv').config()
 const pkg = require('./package')
 
 module.exports = {
@@ -40,7 +39,6 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/dotenv'
   ],
 
   /*

@@ -61,98 +61,72 @@ Se va a usar la herramienta de scaffolding [create-nuxt-app](https://nuxtjs.org/
 
 - Ir al [Dashboard](https://developer.spotify.com/dashboard/) y crear un client ID.
 
-- Editar settings en el Dashboard y añadir como Redirect URIs: 'http://localhost:8888' y 'http://localhost:8888/callback'.
-
-- Clonar proyecto en local (en otra ruta distinta al proyecto) para obtener un token: [Spotify Accounts Authentication Examples](https://github.com/spotify/web-api-auth-examples):
-
-    ```
-    git clone https://github.com/spotify/web-api-auth-examples.git
-    cd web-api-auth-examples
-    npm install
-    ```
-
-- Modificar Client ID y Client Secret con los que aparecen en el Dashboard en `authorization_code/app.js`. Añadir 'http://localhost:8888/callback' como 'redirect_uri'.
-
-- Añadir en scope en `authorization_code/app.js`: 'user-top-read' (para recoger el top de artistas del current user).
-
-- Ejecutar app.js:
-
-```
-cd authorization_code
-$ node app.js
-```
-
-- Ir a http://localhost:8888/
-
-- Log in with Spotify
-
-- Al hacer login te da tus datos, el access token y el refresh token. Haz click en "Obten new token" y apunta el access token desde Network (llamada "refresh_token") para añadirlo en el fichero .env en el siguiente paso.
-
-Ej.
-
-```
-access_token: "BQAxVEKKOV2Ee7byea2KriV4VluYffmllwPhAePEL1c2uu3jmkQXimqRDHaUSXZeNc-tkclrenqMQHDHXfTUZUDjTQOpiSEyUDE4qmFIT_PcVB0yVRRm9fpcUeMsoTDYOAk29Bf7rq1-5hk43Gzx5Ck-AH57pOE9DPPk1Q"
-
-```
-
-#### Instalar dotenv
-
-- [Dotenv](https://github.com/nuxt-community/dotenv-module)
-
-  ```
-  npm install @nuxtjs/dotenv --save
-  ```
-
-- Añadir como primera línea en `nuxt.config-js`:
-  ```
-  require('dotenv').config()
-  ```
-
-- Añadirlo en la sección de `modules` de `nuxt.config.js`:
-
-  ```
-  {
-    modules: [
-      '@nuxtjs/dotenv'
-  ]
-  }
-  ```
-
-- Crear un fichero .env en la raíz del proyecto para añadir el token que obtuvimos en "Instalación paso 2". Si se va a subir a un repositorio git añadirlo a .gitignore para evitar subirlo por error.
-
-  ```
-  SPOTIFY_ACCESS_TOKEN=xxxxxxxxxx
-  ```
-
-- Parar el servidor de desarrollo (Control + C) y arrancarlo de nuevo (`npm run dev`) para cargar los cambios.
+- Editar settings en el Dashboard y añadir como Redirect URIs: 'http://localhost:3000/'.
 
 #### Instalar [Spotify Web API JS]
+
+Instalar el paquete spotify-web-api-js en la raíz del proyecto.,
 
   ```
   npm install spotify-web-api-js --save
   ```
 
 Probar que funciona en `pages/index.vue`:
-- En la sección `script` añadir:
+- En la sección `script` añadir importar librería de spotify-api y el código en la función mounted (cambiando el client ID por el tuyo):
 
   ```js
   const SpotifyWebApi = require('spotify-web-api-js');
   const spotifyApi = new SpotifyWebApi()
 
   export default {
-    components: {
-      Logo
-    },
 
     mounted() {
-      const token = process.env.SPOTIFY_ACCESS_TOKEN;
-      if (token) {
-        spotifyApi.setAccessToken(token);
+      // https://gist.github.com/igorPhelype/68239ecab9afcc50230ce0c61c3bac2f
+      const callback_url = window.location.href
+      const client_id = 'YOUR_CLIENT_ID'
+      const api_url = `https://accounts.spotify.com/authorize?client_id=${client_id}&response_type=token&redirect_uri=${callback_url}`;
+      let access_token
+      let hash
+      if(!window.location.hash) {
+          window.location.replace(api_url)
+      } else {
+          const url = window.location.href
+          hash = url.split('#')[1]
+          hash = hash.split('&')[0]
+          hash = hash.split('=')[1]
       }
-      // Get Elvis' albums
+      access_token = hash
+      if (access_token) {
+        spotifyApi.setAccessToken(access_token)
+      }
+      // Get Elvis' albums (initial test)
       spotifyApi.getArtistAlbums('43ZHCT0cAZBISjO8DG9PnE').then(
         function(data) {
           console.log('Artist albums', data.items)
+        },
+        function(err) {
+          console.error(err)
+        }
+      )
+      // Get my top Artists
+      spotifyApi.getMyTopArtists({
+        limit: 5,
+        time_range: 'medium_term'
+      }).then(
+        function(data) {
+          console.log('getMyTopArtists', data)
+        },
+        function(err) {
+          console.error(err)
+        }
+      )
+      // Get my top tracks
+      spotifyApi.getMyTopTracks({
+        limit: 5,
+        time_range: 'medium_term'
+      }).then(
+        function(data) {
+          console.log('getMyTopTracks', data)
         },
         function(err) {
           console.error(err)
@@ -166,6 +140,8 @@ Probar que funciona en `pages/index.vue`:
 
   ```
   Artist albums (20) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]
+  getMyTopArtists {items: Array(5), total: 11, limit: 5, offset: 0, href: "https://api.spotify.com/v1/me/top/artists?limit=5&offset=0", …}
+  getMyTopTracks {items: Array(5), total: 50, limit: 5, offset: 0, href: "https://api.spotify.com/v1/me/top/tracks?limit=5&offset=0", …}
   ```
 
 ![Imagen consola JS](md-images/spotify-test.jpg?raw=true)
