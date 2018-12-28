@@ -1,13 +1,10 @@
 <template>
   <section class="container">
     <div>
-      <logo/>
+      <img src="~/assets/images/wecodefy-logo.png" >
       <h1 class="title">
-        Wecodefy
+        Tu música en resumen
       </h1>
-      <h2 class="subtitle">
-        My glorious Nuxt.js project
-      </h2>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
@@ -23,14 +20,10 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 const SpotifyWebApi = require('spotify-web-api-js');
 const spotifyApi = new SpotifyWebApi()
 
 export default {
-  components: {
-    Logo
-  },
 
   mounted() {
     // https://gist.github.com/igorPhelype/68239ecab9afcc50230ce0c61c3bac2f

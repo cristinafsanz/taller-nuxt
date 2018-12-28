@@ -20,11 +20,11 @@
     - Are you developing a commercial integration? No
 - [x] Get Top User artists: Se necesita [User Authorization](https://developer.spotify.com/documentation/general/guides/authorization-guide/): To get that authorization, your application generates a call to the Spotify Accounts Service /authorize endpoint, passing along a list of the scopes for which access permission is sought.
     - [Get User's Top Artists and Tracks](https://developer.spotify.com/console/get-current-user-top-artists-and-tracks/?type=artists&time_range=&limit=&offset=)
-- Implicit Grant: [Example](https://gist.github.com/igorPhelype/68239ecab9afcc50230ce0c61c3bac2f), [Authorization Guide](https://developer.spotify.com/documentation/general/guides/authorization-guide/).
+- [x] Implicit Grant: [Example](https://gist.github.com/igorPhelype/68239ecab9afcc50230ce0c61c3bac2f), [Authorization Guide](https://developer.spotify.com/documentation/general/guides/authorization-guide/).
 
 [ ] Rama en GitHub por cada funcionalidad de la aplicación (nuxt1, ...nuxtn):
 - [ ] Rama "nuxt1": Componentes y layout con parte estática. Global CSS (metodología BEM). Nuxt-link. Transición entre páginas. SEO y meta tags. Mostrar code-splitting.
-    - [ ] Imagen Wecodefy: Transparente para poderlo poner rosa, blanco y negro.
+    - [x] Imagen Wecodefy: Transparente.
     - [ ] Layout: Imagen, menú footer, botón subir/bajar numerado y bajar doble flecha.
     - [ ] Global CSS.
     - [ ] Colores con variables CSS. Mirar si en Chrome, Firefox y Safari se ven bien.

@@ -25,7 +25,7 @@ Se va a usar la herramienta de scaffolding [create-nuxt-app](https://nuxtjs.org/
 - Ejecutar:
 
   ```
-  npx create-nuxt-app Wecodefy
+  $ npx create-nuxt-app Wecodefy
   ```
 
 - Ejemplo de elecciones al crear el proyecto:
@@ -45,8 +45,8 @@ Se va a usar la herramienta de scaffolding [create-nuxt-app](https://nuxtjs.org/
 - Situarse en el proyecto y comprobar que arranca correctamente:
 
     ```
-    cd Wecodefy
-    npm run dev
+    $ cd Wecodefy
+    $ npm run dev
     ```
 
 - Abrir el navegador: http://localhost:3000
@@ -68,11 +68,11 @@ Se va a usar la herramienta de scaffolding [create-nuxt-app](https://nuxtjs.org/
 Instalar el paquete spotify-web-api-js en la raíz del proyecto.,
 
   ```
-  npm install spotify-web-api-js --save
+  $ npm install spotify-web-api-js --save
   ```
 
-Probar que funciona en `pages/index.vue`:
-- En la sección `script` añadir importar librería de spotify-api y el código en la función mounted (cambiando el client ID por el tuyo):
+Probar que funciona la conexión con el API de Spotify en `pages/index.vue`:
+- En la sección `script` añadir importar librería de `spotify-web-api-js` y el código en la función mounted (cambiando el client ID por el tuyo):
 
   ```js
   const SpotifyWebApi = require('spotify-web-api-js');
