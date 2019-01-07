@@ -59,12 +59,6 @@ spotifyApi.getMyTopTracks({
 
 Cambiar "time_range" para coger 6 meses y el último mes.
 
-## Adaptar estas páginas
 
-![Imagen página inicial desktop](md-images/home-desktop-hover.button.jpg?raw=true)
-
-![Imagen página 4/8](md-images/4-8-desktop.jpg?raw=true)
-
-![Imagen página 8/8](md-images/8-8-desktop.jpg?raw=true)
 
 
