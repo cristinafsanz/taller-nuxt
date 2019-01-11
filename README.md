@@ -10,7 +10,7 @@ En este taller se va a crear una aplicación similar a [Spotify Wrapped](https:/
 
 ![Imagen página 8/8](md-images/8-8-desktop.jpg?raw=true)
 
-## Pasos:
+## Pasos del taller:
 
 - Paso 1) Creación del layout de la aplicación con datos ficticios.
 - Paso 2) Conexión con el API de Spotify para recoger datos reales.
@@ -46,4 +46,10 @@ En este taller se va a crear una aplicación similar a [Spotify Wrapped](https:/
 
 ### Nota
 
-Para crear la aplicación se usó la herramienta de scaffolding [create-nuxt-app] y el paquete npm `spotify-web-api-js`. Puede verse la explicación de la instalación completa justo con una prueba de la API de Spotify en el [README](https://github.com/cristinafsanz/taller-nuxt/blob/nuxt0/README.md) de la rama `nuxt0`.
+Para crear el scaffolding de la aplicación se usó:
+
+- La herramienta de scaffolding [create-nuxt-app](https://github.com/nuxt/create-nuxt-app).
+- El paquete npm `spotify-web-api-js` para conectar con el API de Spotify. 
+- Los linters de JavaScript y CSS `eslint` y `stylelint`. Para el linter de JavaScript se parte del linter de Airbnb y se añade el linter para Vue. Se pueden ver todos los paquetes instalados en las `devDependencies` del `package.json` y la configuración en `.eslintrc.js` y `.stylelintrc`. Para que en vez de errores salten warnings en consola se añadió `emitWarning: true` en el `eslint-loader` de `nuxt.config.js`.
+
+Puede verse la explicación de la instalación completa justo con una prueba de la API de Spotify en el [README](https://github.com/cristinafsanz/taller-nuxt/blob/nuxt0/README.md) de la rama `nuxt0`.

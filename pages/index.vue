@@ -10,17 +10,16 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Logo from '~/components/Logo.vue';
 
 export default {
-  components: {
-    Logo
-  }
-}
+    components: {
+        Logo,
+    },
+};
 </script>
 
 <style>
-
 .container {
   min-height: 100vh;
   display: flex;
