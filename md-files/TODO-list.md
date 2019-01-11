@@ -34,8 +34,8 @@
     - [ ] Añadir SEO y meta tags.
     - [ ] Mostrar code-splitting.
     - [ ] Apuntar en README todos los pasos a partir de layout.
-- [ ] Rama "nuxt2: Spotify API. Plugins. Vuex guardar estado distintas páginas.
-- [ ] Rama "nuxt3": Despliegue estático GitHub Pages o Netlify.
+- [ ] Rama "nuxt2: Spotify API. Plugins ¿cuál?. Vuex guardar estado distintas páginas.
+- [ ] Rama "nuxt3": Ver código generado estático en dist con el pre rendering. Despliegue estático GitHub Pages o Netlify. 
 
 [ ] Hacer la misma aplicación en Codesandbox para apuntar los pasos en README.
 - Opción 2: Usar editor online CodeSandbox
@@ -50,7 +50,7 @@
     - [ ] Dynamic routes. 
     - [ ] Despliegue Heroku.
  
-[ ] Enlaces a los resultados en cada rama (nuxt1, nuxt2...)
+[ ] Enlaces a los resultados en cada rama (nuxt1, nuxt2...). Demo de cada rama en GitHub Pages para mostrar en el taller (local con VueDevTools y GitHub Pages sin VueDevTools).
 
 [ ] Revisar versión final del README de master, debería contener lo último (rama nuxtn)
 
@@ -62,14 +62,10 @@
 
 [ ] Animaciones CSS entre páginas
 
-## Ideas
-
-[ ] Adaptar texto a "Música mientras programas": Cuando ejecutabas tests, te ponías...
-
 ## Despliegue
 
 - Añadir en el Dashboard de spotify la redirect uris de producción.
 
 ## Día del taller
 
-[ ] Fichero txt con export client ID y client Secret para generar el token antes del taller (el token dura 1 hora)
+[ ] Versión en local del repo + en 1 usb + GitHub.

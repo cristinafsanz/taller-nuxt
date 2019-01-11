@@ -4,11 +4,11 @@
 
 En este taller se va a crear una aplicación similar a [Spotify Wrapped](https://spotifywrapped.com/es/), mostrándote tus canciones y artistas más escuchados en Spotify. Para ello se van a adaptar estas 3 páginas:
 
-![Imagen página inicial desktop](md-images/home-desktop-hover.button.jpg?raw=true)
+![Imagen página inicial desktop](md-files/md-images/home-desktop-hover.button.jpg?raw=true)
 
-![Imagen página 4/8](md-images/4-8-desktop.jpg?raw=true)
+![Imagen página 4/8](md-files/md-images/4-8-desktop.jpg?raw=true)
 
-![Imagen página 8/8](md-images/8-8-desktop.jpg?raw=true)
+![Imagen página 8/8](md-files/md-images/8-8-desktop.jpg?raw=true)
 
 ## Pasos del taller:
 
@@ -42,7 +42,7 @@ En este taller se va a crear una aplicación similar a [Spotify Wrapped](https:/
 - Abrir la aplicación en el navegador: http://localhost:3000
 - Deberías ver una aplicación como ésta:
 
-![Página inicial](md-images/home-page.jpg?raw=true)
+![Página inicial](md-files/md-images/home-page.jpg?raw=true)
 
 ### Nota
 
