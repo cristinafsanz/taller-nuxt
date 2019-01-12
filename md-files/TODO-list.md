@@ -27,7 +27,7 @@
 - [ ] Rama "nuxt2": Componentes y layout con parte estática. Global CSS (metodología BEM). Nuxt-link. Transición entre páginas. SEO y meta tags. Mostrar code-splitting.
     - [x] Imagen Wecodefy: Transparente.
     - [x] Prueba de estructura del layout.
-    - [ ] Global CSS.
+    - [x] Global CSS.
     - [ ] Layout: Imagen, menú footer, botón subir/bajar numerado y bajar doble flecha.
     - [ ] Colores con variables CSS. Mirar si en Chrome, Firefox y Safari se ven bien.
     - [ ] Maquetación de cada página con metodología BEM.

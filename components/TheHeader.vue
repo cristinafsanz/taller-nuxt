@@ -11,10 +11,3 @@ export default {
 
 };
 </script>
-
-<style>
-header {
-    background-color: aquamarine;
-    height: 7rem;
-}
-</style>

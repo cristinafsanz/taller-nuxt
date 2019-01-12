@@ -7,11 +7,10 @@
 </template>
 
 <style>
+/*
+Flex container items inside main
+*/
 main {
-  /* Item inside flex container in layout/default */
-  flex-grow: 1;
-
-  /* Elements inside main */
   display: flex;
   justify-content: center;
   align-items: center;

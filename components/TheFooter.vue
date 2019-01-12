@@ -13,10 +13,3 @@ export default {
 
 };
 </script>
-
-<style>
-footer {
-    background-color: aqua;
-    height: 7rem;
-}
-</style>
