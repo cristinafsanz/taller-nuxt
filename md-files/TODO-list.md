@@ -23,22 +23,24 @@
 - [x] Implicit Grant: [Example](https://gist.github.com/igorPhelype/68239ecab9afcc50230ce0c61c3bac2f), [Authorization Guide](https://developer.spotify.com/documentation/general/guides/authorization-guide/).
 
 [ ] Rama en GitHub por cada funcionalidad de la aplicación (nuxt1, ...nuxtn):
-- [ ] Rama "nuxt1": Componentes y layout con parte estática. Global CSS (metodología BEM). Nuxt-link. Transición entre páginas. SEO y meta tags. Mostrar code-splitting.
+- [x] Rama "nuxt2": Rama inicial con las dependencias necesarias para la aplicación.
+- [ ] Rama "nuxt2": Componentes y layout con parte estática. Global CSS (metodología BEM). Nuxt-link. Transición entre páginas. SEO y meta tags. Mostrar code-splitting.
     - [x] Imagen Wecodefy: Transparente.
-    - [ ] Layout: Imagen, menú footer, botón subir/bajar numerado y bajar doble flecha.
+    - [x] Prueba de estructura del layout.
     - [ ] Global CSS.
+    - [ ] Layout: Imagen, menú footer, botón subir/bajar numerado y bajar doble flecha.
     - [ ] Colores con variables CSS. Mirar si en Chrome, Firefox y Safari se ven bien.
     - [ ] Maquetación de cada página con metodología BEM.
     - [ ] Nuxt-link para moverse entre páginas (ver todos los botones)
     - [ ] Transición páginas.
     - [ ] Añadir SEO y meta tags.
     - [ ] Mostrar code-splitting.
+    - [ ] Probar los linters de JS y CSS.
     - [ ] Apuntar en README todos los pasos a partir de layout.
-- [ ] Rama "nuxt2: Spotify API. Plugins ¿cuál?. Vuex guardar estado distintas páginas.
-- [ ] Rama "nuxt3": Ver código generado estático en dist con el pre rendering. Despliegue estático GitHub Pages o Netlify. 
+- [ ] Rama "nuxt3: Spotify API. Plugins ¿cuál?. Vuex guardar estado distintas páginas.
+- [ ] Rama "nuxt4": Ver código generado estático en dist con el pre rendering. Despliegue estático GitHub Pages o Netlify. 
 
 [ ] Hacer la misma aplicación en Codesandbox para apuntar los pasos en README.
-- Opción 2: Usar editor online CodeSandbox
     - Crear cuenta en [CodeSandbox](https://codesandbox.io/) y hacer un fork de [codesandbox-nuxt](https://codesandbox.io/s/github/nuxt/codesandbox-nuxt).
 
 [ ] Explicación Nuxt en README:
@@ -50,7 +52,7 @@
     - [ ] Dynamic routes. 
     - [ ] Despliegue Heroku.
  
-[ ] Enlaces a los resultados en cada rama (nuxt1, nuxt2...). Demo de cada rama en GitHub Pages para mostrar en el taller (local con VueDevTools y GitHub Pages sin VueDevTools).
+[ ] Enlace a la demo en GitHub Pages para mostrar en el taller (local con VueDevTools y GitHub Pages sin VueDevTools).
 
 [ ] Revisar versión final del README de master, debería contener lo último (rama nuxtn)
 
