@@ -21,6 +21,7 @@ Funcionalidades
 | Documentación                                             | Código                                                              |
 | --------------------------------------------------------- | ------------------------------------------------------------------- |
 | [Adaptar el layout](1-1-default-layout.md)     | [Commit](https://github.com/cristinafsanz/taller-nuxt/commit/6a7d72c7b461f2e27fbd0eb4569b098acbdefc94)    |
-| [Añadir CSS Global](1-2-global-css.md)     |  [Commit](https://github.com/cristinafsanz/taller-nuxt/commit/4c15e5c32ba6ee07ac792cb3684b5a386fb02bf3)   |
+| [Añadir CSS Global](1-2-global-css.md)     | [Commit](https://github.com/cristinafsanz/taller-nuxt/commit/4c15e5c32ba6ee07ac792cb3684b5a386fb02bf3)   |
+| [Header y footer](1-3-header-footer.md)     | [Commit](https://github.com/cristinafsanz/taller-nuxt/commit/e43833e1f5eb0d028909621d6e4b0ee1a0fec695)   |
 
 

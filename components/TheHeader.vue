@@ -1,13 +1,18 @@
 <template>
   <header>
     <div class="logo">
-      Logo
+      <img src="~assets/images/wecodefy-logo.png" >
     </div>
   </header>
 </template>
 
-<script>
-export default {
-
-};
-</script>
+<style>
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logo {
+  margin-left: 2rem;
+}
+</style>

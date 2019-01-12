@@ -1,3 +1,66 @@
+Header y footer
+=================
+
+Para probar todas las posibilidades de `TheFooter` vamos a crear las 2 páginas que nos faltan: `pages/my-music-1.vue` y `pages/my-music-2.vue`.
+
+my-music-1.vue: 
+
+```html
+<template>
+  <main>
+    <h1>
+      My music 1
+    </h1>
+  </main>
+</template>
+```
+
+my-music-2.vue:
+
+```html
+<template>
+  <main>
+    <h1>
+      My music 2
+    </h1>
+  </main>
+</template>
+```
+
+Vamos a adaptar el header y el footer al diseño de Spotify. Borramos el componente `Logo.vue` porque añadiremos la imagen directamente en el componente `TheHeader.vue`.
+
+## TheHeader
+
+Abrimos el fichero `components/TheHeader.vue` y añadimos la imagen y la colocamos a la izquierda.
+
+```html
+<template>
+  <header>
+    <div class="logo">
+      <img src="~assets/images/wecodefy-logo.png" >
+    </div>
+  </header>
+</template>
+
+<style>
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logo {
+  margin-left: 2rem;
+}
+</style>
+```
+
+## TheFooter
+
+Abrimos el fichero `components/TheFooter.vue` y añadimos los enlaces al resto de páginas y los enlaces de navigación. Para navegar por la aplicación vamos a usar el componente de nuxt `<nuxt-link>` (por ejemplo para enlazar a la última página sería `<nuxt-link to="/my-music-2">`).
+
+TheFooter.vue:
+
+```html
 <template>
   <footer :class="{'footer--right': !linksEnabled}">
     <div
@@ -181,3 +244,20 @@ export default {
           color: #555;
      }
 </style>
+```
+
+Para visualizar todos los enlaces ir a la segunda página en el navegador: `http://localhost:3000/my-music-1`.
+
+El resultado de cada página sería:
+
+Home:
+
+![Página home en navegador](../../md-images/header-footer-home.jpg?raw=true)
+
+My music 1:
+
+![Página my music 1 en navegador](../../md-images/header-footer-my-music-1.jpg?raw=true)
+
+My music 2:
+
+![Página my music 2 en navegador](../../md-images/header-footer-my-music-2.jpg?raw=true)

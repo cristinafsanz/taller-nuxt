@@ -28,12 +28,11 @@
     - [x] Imagen Wecodefy: Transparente.
     - [x] Prueba de estructura del layout.
     - [x] Global CSS.
-    - [ ] Layout: Imagen, menú footer, botón subir/bajar numerado y bajar doble flecha.
-    - [ ] Colores con variables CSS. Mirar si en Chrome, Firefox y Safari se ven bien.
-    - [ ] Maquetación de cada página con metodología BEM.
-    - [ ] Nuxt-link para moverse entre páginas (ver todos los botones)
-    - [ ] Transición páginas.
-    - [ ] Añadir SEO y meta tags.
+    - [x] Header y footer con elementos opcionales: Crear cada página y añadir condiciones en el layout.
+    - [x] Nuxt-link para moverse entre páginas (ver todos los botones)
+    - [ ] Separar TheFooter en 3 componentes para separar funcionalidad.
+    - [ ] Maquetación de cada página con metodología BEM y usando Flexbox.
+    - [ ] Añadir SEO y meta tags. ¿Dónde añadir el título de la página?
     - [ ] Mostrar code-splitting.
     - [ ] Probar los linters de JS y CSS.
     - [ ] Apuntar en README todos los pasos a partir de layout.
