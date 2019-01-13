@@ -30,13 +30,13 @@
     - [x] Global CSS.
     - [x] Header y footer con elementos opcionales: Crear cada página y añadir condiciones en el layout.
     - [x] Nuxt-link para moverse entre páginas (ver todos los botones)
-    - [ ] Separar TheFooter en 3 componentes para separar funcionalidad.
-    - [ ] Maquetación de cada página con metodología BEM y usando Flexbox.
+    - [x] Separar TheFooter en 3 componentes para que el componente sea más entendible.
+    - [ ] Color por página (pasar a layout también)
+    - [ ] Maquetación de cada página con metodología BEM y usando Flexbox. ¿Vuex para compartir estado?
     - [ ] Añadir SEO y meta tags. ¿Dónde añadir el título de la página?
-    - [ ] Mostrar code-splitting.
     - [ ] Probar los linters de JS y CSS.
-    - [ ] Apuntar en README todos los pasos a partir de layout.
-- [ ] Rama "nuxt3: Spotify API. Plugins ¿cuál?. Vuex guardar estado distintas páginas.
+
+- [ ] Rama "nuxt3: Spotify API.
 - [ ] Rama "nuxt4": Ver código generado estático en dist con el pre rendering. Despliegue estático GitHub Pages o Netlify. 
 
 [ ] Hacer la misma aplicación en Codesandbox para apuntar los pasos en README.
@@ -50,6 +50,7 @@
     - [ ] Async data / fetch. 
     - [ ] Dynamic routes. 
     - [ ] Despliegue Heroku.
+- [ ] Mostrar code-splitting.
  
 [ ] Enlace a la demo en GitHub Pages para mostrar en el taller (local con VueDevTools y GitHub Pages sin VueDevTools).
 
@@ -57,7 +58,7 @@
 
 ## Opcional
 
-[ ] ¿Usar nuxt-linter?
+[ ] ¿Usar algún plugin?
 
 [ ] ¿Proxy para API?
 

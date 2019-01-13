@@ -1,53 +1,35 @@
 <template>
   <footer :class="{'footer--right': !linksEnabled}">
-    <div
-      v-if="linksEnabled"
-      class="footer__link footer__link-number">
-      <nuxt-link
-        v-if="previousPage"
-        :to="`${pageRoot}${previousPage}`"
-        class="footer__link--up"/>
-      <span>{{ currentPage }} / {{ numberedPages }}</span>
-      <nuxt-link
-        v-if="nextPage"
-        :to="`${pageRoot}${nextPage}`"
-        class="footer__link--down"/>
-    </div>
+    <the-footer-link-number
+      :show="linksEnabled"
+      :show-previous-page="previousPage > 0"
+      :to-previous="`${pageRoot}${previousPage}`"
+      :show-next-page="nextPage > 0"
+      :to-next="`${pageRoot}${nextPage}`"
+      :current-page="currentPageInt"
+      :total-pages="numberedPages"
+    />
 
-    <div v-if="linksEnabled && !isLastPage">
-      <nuxt-link
-        :to="`${pageRoot}${nextPage}`"
-        class="footer__link footer__link-next"
-      >
-        <span class="footer__link--down-double"/>
-        <span class="footer__link--down-double"/>
-      </nuxt-link>
-    </div>
+    <the-footer-link-next
+      :show="linksEnabled && !isLastPage"
+      :to="`${pageRoot}${nextPage}`"
+    />
 
-    <nav>
-      <ul>
-        <li>
-          <nuxt-link to="/aviso-legal">
-            Aviso legal
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/privacidad">
-            Privacidad
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/cookies">
-            Cookies
-          </nuxt-link>
-        </li>
-      </ul>
-    </nav>
+    <the-footer-nav />
   </footer>
 </template>
 
 <script>
+import TheFooterLinkNumber from '~/components/TheFooterLinkNumber.vue';
+import TheFooterLinkNext from '~/components/TheFooterLinkNext.vue';
+import TheFooterNav from '~/components/TheFooterNav.vue';
+
 export default {
+    components: {
+        TheFooterLinkNumber,
+        TheFooterLinkNext,
+        TheFooterNav,
+    },
     data() {
         return {
             currentPage: 1,
@@ -58,6 +40,11 @@ export default {
             nextPage: 0,
             pageRoot: 'my-music-',
         };
+    },
+    computed: {
+        currentPageInt() {
+            return parseInt(this.currentPage, 10);
+        },
     },
     watch: {
         $route: 'routeChanged',
@@ -83,24 +70,23 @@ export default {
         setPagesVariables(routePath) {
             if (this.linksEnabled && routePath) {
                 [, this.currentPage] = routePath.split(this.pageRoot);
-                const currentPageInt = parseInt(this.currentPage, 10);
-                this.setPreviousNextPage(currentPageInt);
-                this.setIsLastPage(currentPageInt);
+                this.setPreviousNextPage();
+                this.setIsLastPage();
             }
         },
 
-        setIsLastPage(currentPageInt) {
-            this.isLastPage = (currentPageInt === this.numberedPages);
+        setIsLastPage() {
+            this.isLastPage = (this.currentPageInt === this.numberedPages);
         },
 
-        setPreviousNextPage(currentPageInt) {
+        setPreviousNextPage() {
             this.previousPage = 0;
             this.nextPage = 0;
 
-            if (currentPageInt === this.numberedPages) {
-                this.previousPage = currentPageInt - 1;
-            } else if (currentPageInt === 1) {
-                this.nextPage = currentPageInt + 1;
+            if (this.currentPageInt === this.numberedPages) {
+                this.previousPage = this.currentPageInt - 1;
+            } else if (this.currentPageInt === 1) {
+                this.nextPage = this.currentPageInt + 1;
             }
         },
     },
@@ -117,67 +103,5 @@ export default {
      }
      footer.footer--right {
           justify-content: flex-end;
-     }
-     /* Links in flex column */
-     .footer__link {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          font-weight: bold;
-     }
-     /* Link numbered */
-     .footer__link-number {
-          /* Item from footer */
-          align-self: flex-start;
-          margin-top: 1rem;
-     }
-
-     /* Link middle */
-     .footer__link footer__link-next {
-          align-self: center;
-     }
-
-     /* Arrows with CSS: https://codepen.io/tu4mo/pen/BLyGRv */
-     .footer__link--up {
-          border-bottom: 2px solid #000;
-          border-right: 2px solid #000;
-          width: 10px;
-          height: 10px;
-          transform: rotate(225deg);
-     }
-     .footer__link--down {
-          border-bottom: 2px solid #000;
-          border-right: 2px solid #000;
-          width: 10px;
-          height: 10px;
-          transform: rotate(45deg);
-     }
-     .footer__link--down-double {
-          border-bottom: 2px solid #000;
-          border-right: 2px solid #000;
-          width: 16px;
-          height: 16px;
-          transform: rotate(45deg);
-          margin-bottom: -5px;
-     }
-     /* Menú */
-     nav {
-          align-self: flex-end;
-          margin-bottom: 1rem;
-     }
-     nav ul {
-          display: flex;
-          list-style: none;
-     }
-     nav li {
-          margin: 0 5px;
-     }
-     nav a {
-          font-size: 0.9em;
-          text-decoration: none;
-          color: #000;
-     }
-     nav a:hover {
-          color: #555;
      }
 </style>

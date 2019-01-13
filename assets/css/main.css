@@ -43,3 +43,27 @@ footer {
     background-color: aqua;
     height: 7rem;
 }
+
+/* Arrows with CSS: https://codepen.io/tu4mo/pen/BLyGRv */
+.arrow-up {
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+    width: 10px;
+    height: 10px;
+    transform: rotate(225deg);
+}
+.arrow-down {
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+}
+.arrow-down--double {
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+    width: 16px;
+    height: 16px;
+    transform: rotate(45deg);
+    margin-bottom: -5px;
+}
