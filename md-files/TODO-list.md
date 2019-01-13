@@ -31,7 +31,7 @@
     - [x] Header y footer con elementos opcionales: Crear cada página y añadir condiciones en el layout.
     - [x] Nuxt-link para moverse entre páginas (ver todos los botones)
     - [x] Separar TheFooter en 3 componentes para que el componente sea más entendible.
-    - [ ] Color por página (pasar a layout también)
+    - [x] Color por página (pasar a layout también)
     - [ ] Maquetación de cada página con metodología BEM y usando Flexbox. ¿Vuex para compartir estado?
     - [ ] Añadir SEO y meta tags. ¿Dónde añadir el título de la página?
     - [ ] Probar los linters de JS y CSS.

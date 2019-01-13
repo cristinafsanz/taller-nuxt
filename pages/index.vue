@@ -6,7 +6,7 @@
   </main>
 </template>
 
-<style>
+<style scoped>
 /*
 Flex container items inside main
 */
@@ -14,5 +14,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #66b3ff;
 }
 </style>

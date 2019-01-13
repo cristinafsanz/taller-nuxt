@@ -1,5 +1,8 @@
 <template>
-  <footer :class="{'footer--right': !linksEnabled}">
+  <footer
+    :style="{ backgroundColor: backgroundColor }"
+    :class="{'footer--right': !linksEnabled}"
+  >
     <the-footer-link-number
       :show="linksEnabled"
       :show-previous-page="previousPage > 0"
@@ -29,6 +32,13 @@ export default {
         TheFooterLinkNumber,
         TheFooterLinkNext,
         TheFooterNav,
+    },
+    props: {
+        backgroundColor: {
+            type: String,
+            required: false,
+            default: '#fff',
+        },
     },
     data() {
         return {

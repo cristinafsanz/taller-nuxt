@@ -24,5 +24,6 @@ Funcionalidades
 | [Añadir CSS Global](1-2-global-css.md)     | [Commit](https://github.com/cristinafsanz/taller-nuxt/commit/4c15e5c32ba6ee07ac792cb3684b5a386fb02bf3)   |
 | [Header y footer](1-3-header-footer.md)     | [Commit](https://github.com/cristinafsanz/taller-nuxt/commit/e43833e1f5eb0d028909621d6e4b0ee1a0fec695)   |
 | [Refactorizar TheFooter](1-4-refactor-the-footer.md)     | [Commit](https://github.com/cristinafsanz/taller-nuxt/commit/7eed89dc0cb75e0716af57df288bb42a041127bd)   |
+| [Color al layout](1-5-color-layout.md)     | [Commit](https://github.com/cristinafsanz/taller-nuxt/commit/0e25825ad5f448dfe905630311cdbad8b1456925)   |
 
 

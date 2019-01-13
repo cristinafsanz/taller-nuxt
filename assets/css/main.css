@@ -26,7 +26,6 @@ Layout container: header, main, footer
 Header
 */
 header {
-    background-color: aquamarine;
     height: 7rem;
 }
 /*
@@ -40,7 +39,6 @@ main {
 Footer
 */
 footer {
-    background-color: aqua;
     height: 7rem;
 }
 

@@ -1,10 +1,22 @@
 <template>
-  <header>
+  <header :style="{ backgroundColor: backgroundColor }">
     <div class="logo">
       <img src="~assets/images/wecodefy-logo.png" >
     </div>
   </header>
 </template>
+
+<script>
+export default {
+    props: {
+        backgroundColor: {
+            type: String,
+            required: false,
+            default: '#fff',
+        },
+    },
+};
+</script>
 
 <style>
 header {

@@ -5,3 +5,9 @@
     </h1>
   </main>
 </template>
+
+<style scoped>
+  main {
+    background-color: #ffc965;
+  }
+</style>
