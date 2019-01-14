@@ -1,3 +1,11 @@
+Maquetación de la home
+=================
+
+Para la home sólo vamos a añadir el título y el botón para conectar con Spotify, que por ahora sólo será un link a la página `my-music-1.vue`.
+
+index.vue:
+
+```html
 <template>
   <main class="index">
     <h1>
@@ -41,3 +49,5 @@ h1 {
   border-radius: 2rem;
 }
 </style>
+
+```

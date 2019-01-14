@@ -32,7 +32,7 @@
     - [x] Nuxt-link para moverse entre páginas (ver todos los botones)
     - [x] Separar TheFooter en 3 componentes para que el componente sea más entendible.
     - [x] Color por página (pasar a layout también)
-    - [ ] Maquetación de cada página con metodología BEM y usando Flexbox. ¿Vuex para compartir estado?
+    - [ ] Maquetación de cada página con metodología BEM y usando Flexbox.
     - [ ] Añadir SEO y meta tags. ¿Dónde añadir el título de la página?
     - [ ] Probar los linters de JS y CSS.
 
@@ -51,6 +51,8 @@
     - [ ] Dynamic routes. 
     - [ ] Despliegue Heroku.
 - [ ] Mostrar code-splitting.
+
+[ ] Añadir en instalación explicación sobre VSCode y Vetur de Vuevixens: https://vuevixens.github.io/docs/workshop/nanos/nano3.html#snippets.
  
 [ ] Enlace a la demo en GitHub Pages para mostrar en el taller (local con VueDevTools y GitHub Pages sin VueDevTools).
 

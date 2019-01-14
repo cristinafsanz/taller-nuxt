@@ -46,7 +46,7 @@ export default {
             const routePath = this.$route.path;
             const pageRoot = 'my-music-';
             const [, currentPage] = routePath.split(pageRoot);
-            const backgroundList = ['#66b3ff', '#ffc965', '#b79cc9'];
+            const backgroundList = ['#638de8', '#ffc965', '#b79cc9'];
             const isPage = [routePath === '/', currentPage === '1', currentPage === '2'];
 
             isPage.forEach((isPageItem, index) => {
@@ -100,7 +100,7 @@ Hay que hacer lo mismo para `TheFooter.vue`, añadir el estilo en la etiqueta `<
 
 En las páginas ya se puede añadir el mismo `background-color` añadido en el layout:
 
-- index.vue: `background-color: #66b3ff;`
+- index.vue: `background-color: #638de8;`
 
 - my-music-1.vue: `background-color: #ffc965;`
 
