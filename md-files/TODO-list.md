@@ -34,9 +34,9 @@
     - [x] Color por página (pasar a layout también)
     - [ ] Maquetación de cada página con metodología BEM y usando Flexbox.
     - [ ] Añadir SEO y meta tags. ¿Dónde añadir el título de la página?
-    - [ ] Probar los linters de JS y CSS.
+    - [ ] Probar los linters de JS y CSS. Comprobar que el indentado es siempre el mismo para HTML, CSS, JavaScript.
 
-- [ ] Rama "nuxt3: Spotify API.
+- [ ] Rama "nuxt3: Spotify API. Usar object.freeze (vue tip).
 - [ ] Rama "nuxt4": Ver código generado estático en dist con el pre rendering. Despliegue estático GitHub Pages o Netlify. 
 
 [ ] Hacer la misma aplicación en Codesandbox para apuntar los pasos en README.
@@ -56,7 +56,7 @@
  
 [ ] Enlace a la demo en GitHub Pages para mostrar en el taller (local con VueDevTools y GitHub Pages sin VueDevTools).
 
-[ ] Revisar versión final del README de master, debería contener lo último (rama nuxtn)
+[ ] Revisar versión final del README de master y nuxt1, debería contener lo último con todos los enlaces de las instrucciones (rama nuxtn)
 
 ## Opcional
 

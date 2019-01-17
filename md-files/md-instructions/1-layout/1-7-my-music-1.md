@@ -1,3 +1,9 @@
+Maquetación de la página "My music 1"
+=================
+
+my-music-1:
+
+```html
 <template>
   <main class="my-music-1">
     <h1>
@@ -77,3 +83,4 @@
     margin-bottom: 1rem;
   }
 </style>
+```
