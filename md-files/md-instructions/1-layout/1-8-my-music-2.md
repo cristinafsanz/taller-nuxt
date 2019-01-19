@@ -1,3 +1,11 @@
+Maquetación de la página "My music 2"
+=================
+
+El icono de twitter sacado de [icons8](https://icons8.com/icon/set/twitter/color).
+
+my-music-2.vue:
+
+```html
 <template>
   <main class="my-music-2">
     <div class="my-music-2__jacket">
@@ -118,3 +126,4 @@
     text-align: center;
   }
 </style>
+```

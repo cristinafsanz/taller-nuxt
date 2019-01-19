@@ -32,28 +32,29 @@
     - [x] Nuxt-link para moverse entre páginas (ver todos los botones)
     - [x] Separar TheFooter en 3 componentes para que el componente sea más entendible.
     - [x] Color por página (pasar a layout también)
-    - [ ] Maquetación de cada página con metodología BEM y usando Flexbox.
-    - [ ] Añadir SEO y meta tags. ¿Dónde añadir el título de la página?
+    - [x] Maquetación de cada página con metodología BEM y usando Flexbox.
+    - [ ] Añadir SEO y meta tags.
     - [ ] Probar los linters de JS y CSS. Comprobar que el indentado es siempre el mismo para HTML, CSS, JavaScript.
 
 - [ ] Rama "nuxt3: Spotify API. Usar object.freeze (vue tip).
-- [ ] Rama "nuxt4": Ver código generado estático en dist con el pre rendering. Despliegue estático GitHub Pages o Netlify. 
+- [ ] Rama "nuxt4": Ver código generado estático en dist con el pre rendering. Despliegue estático GitHub Pages o Netlify. Comprobar las [meta tags de twitter](https://cards-dev.twitter.com/validator) para compartir en twitter.
 
 [ ] Hacer la misma aplicación en Codesandbox para apuntar los pasos en README.
     - Crear cuenta en [CodeSandbox](https://codesandbox.io/) y hacer un fork de [codesandbox-nuxt](https://codesandbox.io/s/github/nuxt/codesandbox-nuxt).
 
 [ ] Explicación Nuxt en README:
+- [ ] Mostrar el "Nuxtjs-Cheat-Sheet" creado por [Vue Mastery](https://www.vuemastery.com/nuxt-cheat-sheet/).
 - [ ] Qué es Nuxt: framework Vue. SEO friendly. Mejora performance.
-- [ ] Modos Pre-render y SSR. 
+- [ ] Modos Pre-render y SSR.
 - [ ] Muestra en Chrome Dev tools de parte de SEO y code-splitting.
-- [ ] Lo que no vamos a ver (en cursos de Nuxt en Vue School): 
-    - [ ] Async data / fetch. 
-    - [ ] Dynamic routes. 
+- [ ] Lo que no vamos a ver (en cursos de Nuxt en Vue School):
+    - [ ] Async data / fetch.
+    - [ ] Dynamic routes.
     - [ ] Despliegue Heroku.
 - [ ] Mostrar code-splitting.
 
 [ ] Añadir en instalación explicación sobre VSCode y Vetur de Vuevixens: https://vuevixens.github.io/docs/workshop/nanos/nano3.html#snippets.
- 
+
 [ ] Enlace a la demo en GitHub Pages para mostrar en el taller (local con VueDevTools y GitHub Pages sin VueDevTools).
 
 [ ] Revisar versión final del README de master y nuxt1, debería contener lo último con todos los enlaces de las instrucciones (rama nuxtn)

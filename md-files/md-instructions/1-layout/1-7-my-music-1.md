@@ -1,7 +1,7 @@
 Maquetación de la página "My music 1"
 =================
 
-my-music-1:
+my-music-1.vue:
 
 ```html
 <template>
