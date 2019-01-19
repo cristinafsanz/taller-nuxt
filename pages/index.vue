@@ -11,6 +11,19 @@
   </main>
 </template>
 
+<script>
+export default {
+    head() {
+        return {
+            title: 'Tu música en resumen',
+            meta: [
+                { hid: 'description', name: 'description', content: 'Descubre tus artistas y canciones favoritos en Wecodefy.' },
+            ],
+        };
+    },
+};
+</script>
+
 <style scoped>
 /*
 Flex container items inside main

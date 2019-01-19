@@ -36,6 +36,19 @@
   </main>
 </template>
 
+<script>
+export default {
+    head() {
+        return {
+            title: 'Listas de éxitos',
+            meta: [
+                { hid: 'description', name: 'description', content: 'La lista de los artistas y las canciones que más has escuchado en Spotify.' },
+            ],
+        };
+    },
+};
+</script>
+
 <style scoped>
   main {
     background-color: #ffc965;

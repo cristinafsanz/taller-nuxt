@@ -33,7 +33,7 @@
     - [x] Separar TheFooter en 3 componentes para que el componente sea más entendible.
     - [x] Color por página (pasar a layout también)
     - [x] Maquetación de cada página con metodología BEM y usando Flexbox.
-    - [ ] Añadir SEO y meta tags.
+    - [x] Añadir SEO y meta tags.
     - [ ] Probar los linters de JS y CSS. Comprobar que el indentado es siempre el mismo para HTML, CSS, JavaScript.
 
 - [ ] Rama "nuxt3: Spotify API. Usar object.freeze (vue tip).

@@ -44,7 +44,7 @@
       <p class="twitter-share-button">
         <a
           target="_blank"
-          href="https://twitter.com/intent/tweet">
+          href="https://twitter.com/intent/tweet?text=Mis%20canciones%20en%20Wecodefy">
           <img src="~assets/images/twitter-icon.png">
         </a>
       </p>
@@ -53,6 +53,26 @@
 
   </main>
 </template>
+
+<script>
+export default {
+    head() {
+        return {
+            title: 'Comparte tu música',
+            meta: [
+                { hid: 'description', name: 'description', content: 'Comparte tus artistas y canciones favoritos de Wecodefy.' },
+                { name: 'twitter:title', content: 'Wecodefy' },
+                { name: 'twitter:description', content: 'Descubre tus artistas y canciones favoritos de Wecodefy' },
+                { name: 'twitter:image', content: '~assets/images/wecodefy-logo.png' },
+                { name: 'twitter:card', content: 'summary_large_image' },
+            ],
+            link: [
+                { rel: 'canonical', href: 'https://github.com/cristinafsanz/taller-nuxt' },
+            ],
+        };
+    },
+};
+</script>
 
 <style scoped>
   main {
