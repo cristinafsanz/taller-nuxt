@@ -1,7 +1,7 @@
 <template>
   <header :style="{ backgroundColor: backgroundColor }">
     <div class="logo">
-      <img src="~assets/images/wecodefy-logo.png" >
+      <img src="~assets/images/wecodefy-logo.png">
     </div>
   </header>
 </template>
@@ -20,11 +20,11 @@ export default {
 
 <style>
 header {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .logo {
-  margin-left: 2rem;
+    margin-left: 2rem;
 }
 </style>

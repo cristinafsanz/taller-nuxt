@@ -50,14 +50,14 @@ export default {
 </script>
 
 <style>
-    .footer-link-number {
-        /* Links in flex column */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-weight: bold;
-        /* Item from footer */
-        align-self: flex-start;
-        margin-top: 1rem;
-    }
+.footer-link-number {
+    /* Links in flex column */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    /* Item from footer */
+    align-self: flex-start;
+    margin-top: 1rem;
+}
 </style>

@@ -29,5 +29,6 @@ Funcionalidades
 | [Maquetación de la 2ª página](1-7-my-music-1.md)     | [Commit](https://github.com/cristinafsanz/taller-nuxt/commit/f0e9f22dab4b351329d8428fba7886ca464e160d)   |
 | [Maquetación de la última página](1-8-my-music-2.md)     | [Commit](https://github.com/cristinafsanz/taller-nuxt/commit/ba32ba6a3a9f6060c00b26e1e1aeed18b105c69e#diff-b6c030b1839638bd6d7f684982b00e3d)   |
 | [Meta tags para el SEO](1-9-meta-tags.md)     | [Commit](https://github.com/cristinafsanz/taller-nuxt/commit/95de258bd342e74c05c88a5158f597e316fbb4ef)   |
+| [Formato de código](1-10-indent.md)     | [Commit](https://github.com/cristinafsanz/taller-nuxt/commit/8d6ac53b2379cb8d6b0615149bd6789e8beda521)   |
 
 

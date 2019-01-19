@@ -1,12 +1,10 @@
 <template>
   <div
     v-if="show"
-    class="footer-link-next"
-  >
+    class="footer-link-next">
     <nuxt-link
       :to="to"
-      class="footer-link-next__link"
-    >
+      class="footer-link-next__link">
       <span class="arrow-down--double"/>
       <span class="arrow-down--double"/>
     </nuxt-link>
@@ -29,10 +27,10 @@ export default {
 </script>
 
 <style>
-    .footer-link-next__link {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-weight: bold;
-    }
+.footer-link-next__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
 </style>

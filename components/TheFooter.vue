@@ -1,8 +1,7 @@
 <template>
   <footer
     :style="{ backgroundColor: backgroundColor }"
-    :class="{'footer--right': !linksEnabled}"
-  >
+    :class="{'footer--right': !linksEnabled}">
     <the-footer-link-number
       :show="linksEnabled"
       :show-previous-page="previousPage > 0"
@@ -15,10 +14,9 @@
 
     <the-footer-link-next
       :show="linksEnabled && !isLastPage"
-      :to="`${pageRoot}${nextPage}`"
-    />
+      :to="`${pageRoot}${nextPage}`"/>
 
-    <the-footer-nav />
+    <the-footer-nav/>
   </footer>
 </template>
 
@@ -74,7 +72,7 @@ export default {
         },
 
         setLinksEnabled(routePath) {
-            this.linksEnabled = (routePath !== '/');
+            this.linksEnabled = routePath !== '/';
         },
 
         setPagesVariables(routePath) {
@@ -86,7 +84,7 @@ export default {
         },
 
         setIsLastPage() {
-            this.isLastPage = (this.currentPageInt === this.numberedPages);
+            this.isLastPage = this.currentPageInt === this.numberedPages;
         },
 
         setPreviousNextPage() {
@@ -104,14 +102,14 @@ export default {
 </script>
 
 <style>
-     /* Container footer: links and nav */
-     footer {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 0 2rem;
-     }
-     footer.footer--right {
-          justify-content: flex-end;
-     }
+/* Container footer: links and nav */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+footer.footer--right {
+    justify-content: flex-end;
+}
 </style>

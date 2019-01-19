@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <the-header :background-color="backgroundColor" />
+    <the-header :background-color="backgroundColor"/>
     <nuxt/>
     <the-footer :background-color="backgroundColor"/>
   </div>
@@ -39,7 +39,11 @@ export default {
             const pageRoot = 'my-music-';
             const [, currentPage] = routePath.split(pageRoot);
             const backgroundList = ['#638de8', '#ffc965', '#b79cc9'];
-            const isPage = [routePath === '/', currentPage === '1', currentPage === '2'];
+            const isPage = [
+                routePath === '/',
+                currentPage === '1',
+                currentPage === '2',
+            ];
 
             isPage.forEach((isPageItem, index) => {
                 if (isPageItem) {
