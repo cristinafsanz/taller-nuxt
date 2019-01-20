@@ -3,29 +3,30 @@
     <h1>Listas de éxitos</h1>
     <section class="my-music-1-section">
       <img
-        class="my-music-1-section__image"
-        src="~assets/images/image-last-month.jpg">
+        :src="topArtistImage"
+        class="my-music-1-section__image">
       <div class="my-music-1-section__list">
         <p>Como tu playlist, ninguna.</p>
+        <p>Tus artistas favoritos y las canciones más escuchadas el último mes.</p>
         <div class="my-music-1-section__artists-songs">
           <div class="my-music-1-section__list--artists">
             <p>Artistas favoritos</p>
             <ul>
-              <li>Sufjan Stevens</li>
-              <li>Kisses</li>
-              <li>Dua Lipa</li>
-              <li>The Cranberries</li>
-              <li>Alexis Ffrench</li>
+              <li
+                v-for="artist in artists.items"
+                :key="artist.name">
+                {{ artist.name }}
+              </li>
             </ul>
           </div>
           <div class="my-music-1-section__list--songs">
             <p>Canciones favoritas</p>
             <ul>
-              <li>Funny Heartbeat</li>
-              <li>IDGAF</li>
-              <li>Eugene</li>
-              <li>Should Have Known...</li>
-              <li>The Theory of Eve...</li>
+              <li
+                v-for="track in tracks.items"
+                :key="track.name">
+                {{ track.name }}
+              </li>
             </ul>
           </div>
         </div>
@@ -35,6 +36,10 @@
 </template>
 
 <script>
+const SpotifyWebApi = require('spotify-web-api-js');
+
+const spotifyApi = new SpotifyWebApi();
+
 export default {
     head() {
         return {
@@ -48,6 +53,62 @@ export default {
                 },
             ],
         };
+    },
+    data() {
+        return {
+            artists: [],
+            tracks: [],
+            topArtistImage: '',
+        };
+    },
+    async mounted() {
+        await this.setSpotifyAccessToken();
+        await this.getArtists();
+        await this.getTracks();
+    },
+    methods: {
+        async setSpotifyAccessToken() {
+            const callbackUrl = window.location.href;
+            const clientId = '9ce0744ff4a04334966cbcf3fb7e312d';
+            const apiUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&redirect_uri=${callbackUrl}`;
+            let hash;
+            if (!window.location.hash) {
+                window.location.replace(apiUrl);
+            } else {
+                const url = window.location.href;
+                [, hash] = url.split('#');
+                [hash] = hash.split('&');
+                [, hash] = hash.split('=');
+            }
+            const accessToken = hash;
+            if (accessToken) {
+                await spotifyApi.setAccessToken(accessToken);
+            }
+        },
+        async getArtists() {
+            this.artists = await spotifyApi.getMyTopArtists({
+                limit: 5,
+                time_range: 'medium_term',
+            });
+            this.setArtistImage();
+        },
+        setArtistImage() {
+            const { items } = this.artists;
+            if (items && items.length > 0) {
+                const firstItem = items[0];
+                const { images } = firstItem;
+                if (images && images.length > 0) {
+                    const firstImageUrl = images[0].url;
+                    this.topArtistImage = firstImageUrl;
+                }
+            }
+        },
+        async getTracks() {
+            this.tracks = await spotifyApi.getMyTopTracks({
+                limit: 5,
+                time_range: 'short_term',
+            });
+        },
     },
 };
 </script>

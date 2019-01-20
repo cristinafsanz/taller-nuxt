@@ -37,7 +37,17 @@
     - [x] Probar los linters de JS y CSS. Comprobar que el indentado es siempre el mismo para HTML, CSS, JavaScript.
 
 - [ ] Rama "nuxt3: Spotify API. Usar object.freeze (vue tip).
-- [ ] Rama "nuxt4": Ver código generado estático en dist con el pre rendering. Despliegue estático GitHub Pages o Netlify. Comprobar las [meta tags de twitter](https://cards-dev.twitter.com/validator) para compartir en twitter.
+    - [x] Artists y tracks en `my-music-1` y `my-music-2`.
+    - [x] Top Genre en `my-music-2`: palabra más repetida.
+    - [x] Imagen top artist.
+    - [ ] Refactor llamada spotify-api.
+    - [ ] Probar async data o añadir un loading hasta que se cargue.
+
+- [ ] Rama "nuxt4":
+    - [ ] Ver código generado estático en dist con el pre rendering.
+    - [ ] Despliegue estático GitHub Pages o Netlify.
+    - [ ] Comprobar las [meta tags de twitter](https://cards-dev.twitter.com/validator) para compartir en twitter.
+    - [ ] Añadir los redirects de la aplicación desplegada.
 
 [ ] Hacer la misma aplicación en Codesandbox para apuntar los pasos en README.
     - Crear cuenta en [CodeSandbox](https://codesandbox.io/) y hacer un fork de [codesandbox-nuxt](https://codesandbox.io/s/github/nuxt/codesandbox-nuxt).
@@ -57,7 +67,7 @@
 
 [ ] Enlace a la demo en GitHub Pages para mostrar en el taller (local con VueDevTools y GitHub Pages sin VueDevTools).
 
-[ ] Revisar versión final del README de master y nuxt1, debería contener lo último con todos los enlaces de las instrucciones (rama nuxtn)
+[ ] Revisar versión final del README de master y nuxt1, debería contener lo último con todos los enlaces de las instrucciones, junto con la última versión de la instalación (rama nuxtn).
 
 [ ] ¿Por qué stylelint no me marca css al ejecutar `npm run lint:css`?
 
