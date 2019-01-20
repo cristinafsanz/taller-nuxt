@@ -40,14 +40,14 @@
     - [x] Artists y tracks en `my-music-1` y `my-music-2`.
     - [x] Top Genre en `my-music-2`: palabra más repetida.
     - [x] Imagen top artist.
-    - [ ] Refactor llamada spotify-api.
-    - [ ] Probar async data o añadir un loading hasta que se cargue.
+    - [x] Refactor llamada spotify-api.
+    - [ ] Mejorar la carga de datos (sobre todo la carga de la imagen): Llamar a la api de Spotify en la home y guardar datos en Vuex. Loading icon mientras tanto.
 
 - [ ] Rama "nuxt4":
     - [ ] Ver código generado estático en dist con el pre rendering.
     - [ ] Despliegue estático GitHub Pages o Netlify.
     - [ ] Comprobar las [meta tags de twitter](https://cards-dev.twitter.com/validator) para compartir en twitter.
-    - [ ] Añadir los redirects de la aplicación desplegada.
+    - [ ] Añadir los redirects de la aplicación desplegada en Spotify Developers.
 
 [ ] Hacer la misma aplicación en Codesandbox para apuntar los pasos en README.
     - Crear cuenta en [CodeSandbox](https://codesandbox.io/) y hacer un fork de [codesandbox-nuxt](https://codesandbox.io/s/github/nuxt/codesandbox-nuxt).

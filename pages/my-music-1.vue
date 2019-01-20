@@ -36,11 +36,10 @@
 </template>
 
 <script>
-const SpotifyWebApi = require('spotify-web-api-js');
-
-const spotifyApi = new SpotifyWebApi();
+import spotifyApi from '~/mixins/spotify-api';
 
 export default {
+    mixins: [spotifyApi],
     head() {
         return {
             title: 'Listas de éxitos',
@@ -63,52 +62,9 @@ export default {
     },
     async mounted() {
         await this.setSpotifyAccessToken();
-        await this.getArtists();
-        await this.getTracks();
-    },
-    methods: {
-        async setSpotifyAccessToken() {
-            const callbackUrl = window.location.href;
-            const clientId = '9ce0744ff4a04334966cbcf3fb7e312d';
-            const apiUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&redirect_uri=${callbackUrl}`;
-            let hash;
-            if (!window.location.hash) {
-                window.location.replace(apiUrl);
-            } else {
-                const url = window.location.href;
-                [, hash] = url.split('#');
-                [hash] = hash.split('&');
-                [, hash] = hash.split('=');
-            }
-            const accessToken = hash;
-            if (accessToken) {
-                await spotifyApi.setAccessToken(accessToken);
-            }
-        },
-        async getArtists() {
-            this.artists = await spotifyApi.getMyTopArtists({
-                limit: 5,
-                time_range: 'medium_term',
-            });
-            this.setArtistImage();
-        },
-        setArtistImage() {
-            const { items } = this.artists;
-            if (items && items.length > 0) {
-                const firstItem = items[0];
-                const { images } = firstItem;
-                if (images && images.length > 0) {
-                    const firstImageUrl = images[0].url;
-                    this.topArtistImage = firstImageUrl;
-                }
-            }
-        },
-        async getTracks() {
-            this.tracks = await spotifyApi.getMyTopTracks({
-                limit: 5,
-                time_range: 'short_term',
-            });
-        },
+        // data since last 6 months
+        await this.getArtists('medium_term');
+        await this.getTracks('medium_term');
     },
 };
 </script>
