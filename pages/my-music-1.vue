@@ -36,10 +36,11 @@
 </template>
 
 <script>
-import spotifyApi from '~/mixins/spotify-api';
+import {
+    setSpotifyAccessToken, getArtists, getTracks,
+} from '~/mixins/spotify-api';
 
 export default {
-    mixins: [spotifyApi],
     head() {
         return {
             title: 'Listas de éxitos',
@@ -53,18 +54,12 @@ export default {
             ],
         };
     },
-    data() {
-        return {
-            artists: [],
-            tracks: [],
-            topArtistImage: '',
-        };
-    },
-    async mounted() {
-        await this.setSpotifyAccessToken();
+    async asyncData() {
+        await setSpotifyAccessToken();
         // data since last 6 months
-        await this.getArtists('medium_term');
-        await this.getTracks('medium_term');
+        const { artists, topArtistImage } = await getArtists('medium_term');
+        const { tracks } = await getTracks('medium_term');
+        return { artists, topArtistImage, tracks };
     },
 };
 </script>

@@ -51,10 +51,11 @@
 </template>
 
 <script>
-import spotifyApi from '~/mixins/spotify-api';
+import {
+    setSpotifyAccessToken, getArtists, getTracks, getTopGenre,
+} from '~/mixins/spotify-api';
 
 export default {
-    mixins: [spotifyApi],
     head() {
         return {
             title: 'Comparte tu música',
@@ -85,20 +86,15 @@ export default {
             ],
         };
     },
-    data() {
-        return {
-            artists: [],
-            tracks: [],
-            topGenre: '',
-            topArtistImage: '',
-        };
-    },
-    async mounted() {
-        await this.setSpotifyAccessToken();
+    async asyncData() {
+        await setSpotifyAccessToken();
         // data since last years
-        await this.getArtists('long_term');
-        await this.getTracks('long_term');
-        this.getTopGenre();
+        const { artists, topArtistImage } = await getArtists('long_term');
+        const { tracks } = await getTracks('long_term');
+        const topGenre = getTopGenre(artists);
+        return {
+            artists, topArtistImage, tracks, topGenre,
+        };
     },
 };
 </script>
