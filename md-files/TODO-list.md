@@ -41,9 +41,10 @@
     - [x] Top Genre en `my-music-2`: palabra más repetida.
     - [x] Imagen top artist.
     - [x] Refactor llamada spotify-api.
-    - [ ] Mejorar la carga de datos (sobre todo la carga de la imagen): Async data para recoger datos del API.
+    - [x] Mejorar la carga de datos (sobre todo la carga de la imagen): Async data para recoger datos del API.
         - ¿Por qué al recargar ya no se pintan los datos? https://github.com/nuxt/nuxt.js/issues/1133
-    - [ ] Llamar a la api de Spotify (`medium_term` y `long_term`) en la home y guardar datos en Vuex para usarlo en cada página.
+    - [x] Llamar a la api de Spotify (`medium_term` y `long_term`) en la home y guardar datos en Vuex para usarlo en cada página. Cuando se recarga se borran los datos también.
+    - [x] A veces no cambia de página bien después de recargar
 
 - [ ] Rama "nuxt4":
     - [ ] Ver código generado estático en dist con el pre rendering.

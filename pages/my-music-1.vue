@@ -36,11 +36,8 @@
 </template>
 
 <script>
-import {
-    setSpotifyAccessToken, getArtists, getTracks,
-} from '~/mixins/spotify-api';
-
 export default {
+    middleware: 'store-data-spotify',
     head() {
         return {
             title: 'Listas de éxitos',
@@ -54,12 +51,16 @@ export default {
             ],
         };
     },
-    async asyncData() {
-        await setSpotifyAccessToken();
-        // data since last 6 months
-        const { artists, topArtistImage } = await getArtists('medium_term');
-        const { tracks } = await getTracks('medium_term');
-        return { artists, topArtistImage, tracks };
+    computed: {
+        artists() {
+            return this.$store.state.artists;
+        },
+        topArtistImage() {
+            return this.$store.state.topArtistImage;
+        },
+        tracks() {
+            return this.$store.state.tracks;
+        },
     },
 };
 </script>

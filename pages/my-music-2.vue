@@ -51,10 +51,6 @@
 </template>
 
 <script>
-import {
-    setSpotifyAccessToken, getArtists, getTracks, getTopGenre,
-} from '~/mixins/spotify-api';
-
 export default {
     head() {
         return {
@@ -86,15 +82,19 @@ export default {
             ],
         };
     },
-    async asyncData() {
-        await setSpotifyAccessToken();
-        // data since last years
-        const { artists, topArtistImage } = await getArtists('long_term');
-        const { tracks } = await getTracks('long_term');
-        const topGenre = getTopGenre(artists);
-        return {
-            artists, topArtistImage, tracks, topGenre,
-        };
+    computed: {
+        artists() {
+            return this.$store.state.artistsYears;
+        },
+        topArtistImage() {
+            return this.$store.state.topArtistImageYears;
+        },
+        tracks() {
+            return this.$store.state.tracksYears;
+        },
+        topGenre() {
+            return this.$store.state.topGenreYears;
+        },
     },
 };
 </script>

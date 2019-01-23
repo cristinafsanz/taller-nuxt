@@ -2,7 +2,12 @@ const SpotifyWebApi = require('spotify-web-api-js');
 
 const spotifyApi = new SpotifyWebApi();
 
-export async function setSpotifyAccessToken() {
+export async function setSpotifyAccessToken(token) {
+    let accessToken = '';
+    if (token) {
+        await spotifyApi.setAccessToken(token);
+        return token;
+    }
     if (process.client) {
         const callbackUrl = window.location.href;
         const clientId = '9ce0744ff4a04334966cbcf3fb7e312d';
@@ -16,11 +21,12 @@ export async function setSpotifyAccessToken() {
             [hash] = hash.split('&');
             [, hash] = hash.split('=');
         }
-        const accessToken = hash;
+        accessToken = hash;
         if (accessToken) {
             await spotifyApi.setAccessToken(accessToken);
         }
     }
+    return accessToken;
 }
 
 function getArtistImage(artists) {

@@ -15,7 +15,8 @@
   "dependencies": {
     "cross-env": "^5.2.0",
     "nuxt": "^2.0.0",
-    "spotify-web-api-js": "^1.1.1"
+    "spotify-web-api-js": "^1.1.1",
+    "vuex-persist": "^2.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
