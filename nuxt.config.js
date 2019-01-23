@@ -81,4 +81,11 @@ module.exports = {
             }
         },
     },
+
+    /*
+    Deploy in taller-nuxt repository
+    */
+    router: {
+        base: '/taller-nuxt/',
+    },
 };

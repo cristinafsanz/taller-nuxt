@@ -47,10 +47,13 @@
     - [x] A veces no cambia de página bien después de recargar
 
 - [ ] Rama "nuxt4":
-    - [ ] Ver código generado estático en dist con el pre rendering.
-    - [ ] Despliegue estático GitHub Pages o Netlify.
-    - [ ] Comprobar las [meta tags de twitter](https://cards-dev.twitter.com/validator) para compartir en twitter.
-    - [ ] Añadir los redirects de la aplicación desplegada en Spotify Developers.
+    - [x] Ver código generado estático en dist con el pre rendering.
+    - [x] Despliegue estático GitHub Pages.
+    - [x] Añadir los redirects de la aplicación desplegada en Spotify Developers.
+    - [ ] Compartir en twitter `https://cristinafsanz.github.io/taller-nuxt/my-music-2`: Descubre tus artistas y canciones favoritos en WeCodefy.
+        - Imagen a partir del html?
+        - Url la de la página del taller para que lo hagan ellos
+    - [ ] ¿Pueden ver otras personas tu información accediendo a la página? Ahora mismo no ven datos.
 
 [ ] Hacer la misma aplicación en Codesandbox para apuntar los pasos en README.
     - Crear cuenta en [CodeSandbox](https://codesandbox.io/) y hacer un fork de [codesandbox-nuxt](https://codesandbox.io/s/github/nuxt/codesandbox-nuxt).
