@@ -4,7 +4,12 @@
 
 - Visitar https://developer.spotify.com/dashboard/.
 - Iniciar sesión con tu cuenta de Spotify y crear un `Client ID`. Copiar el Client ID para usarlo en el taller.
-- Editar settings dentro de la aplicación creada y añadir como Redirect URIs: `http://localhost:3000/`
+- Editar settings dentro de la aplicación creada y añadir como Redirect URIs:
+
+    - `http://localhost:3000/`
+    - `http://localhost:3000/my-music-1`
+    - `http://localhost:3000/my-music-2`
+
 - Guardar los cambios.
 
 ## 2) Instalar herramientas
