@@ -50,13 +50,8 @@
     - [x] Ver código generado estático en dist con el pre rendering.
     - [x] Despliegue estático GitHub Pages.
     - [x] Añadir los redirects de la aplicación desplegada en Spotify Developers.
-    - [ ] Compartir en twitter `https://cristinafsanz.github.io/taller-nuxt/my-music-2`: Descubre tus artistas y canciones favoritos en WeCodefy.
-        - Imagen a partir del html?
-        - Url la de la página del taller para que lo hagan ellos
-    - [ ] ¿Pueden ver otras personas tu información accediendo a la página? Ahora mismo no ven datos.
-
-[ ] Hacer la misma aplicación en Codesandbox para apuntar los pasos en README.
-    - Crear cuenta en [CodeSandbox](https://codesandbox.io/) y hacer un fork de [codesandbox-nuxt](https://codesandbox.io/s/github/nuxt/codesandbox-nuxt).
+    - [x] Compartir en twitter `https://cristinafsanz.github.io/taller-nuxt/my-music-2`: Descubre tus artistas y canciones favoritos en WeCodefy.
+        - Url la de la página del taller para que se anime la gente a hacerlo
 
 [ ] Explicación Nuxt en README:
 - [ ] Mostrar el "Nuxtjs-Cheat-Sheet" creado por [Vue Mastery](https://www.vuemastery.com/nuxt-cheat-sheet/).
@@ -68,6 +63,9 @@
     - [ ] Dynamic routes.
     - [ ] Despliegue Heroku.
 - [ ] Mostrar code-splitting.
+
+[ ] Hacer la misma aplicación en Codesandbox para apuntar los pasos en README.
+    - Crear cuenta en [CodeSandbox](https://codesandbox.io/) y hacer un fork de [codesandbox-nuxt](https://codesandbox.io/s/github/nuxt/codesandbox-nuxt).
 
 [ ] Añadir en instalación explicación sobre VSCode y Vetur de Vuevixens: https://vuevixens.github.io/docs/workshop/nanos/nano3.html#snippets.
 

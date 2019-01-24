@@ -40,8 +40,8 @@
       </p>
       <p class="twitter-share-button">
         <a
+          :href="`https://twitter.com/intent/tweet?text=${tweetText}&url=${tweetUrl}&via=${tweetVia}`"
           target="_blank"
-          href="https://twitter.com/intent/tweet?text=Mis%20canciones%20en%20Wecodefy"
         >
           <img src="~assets/images/twitter-icon.png">
         </a>
@@ -80,6 +80,13 @@ export default {
                     href: 'https://github.com/cristinafsanz/taller-nuxt',
                 },
             ],
+        };
+    },
+    data() {
+        return {
+            tweetText: 'Descubre tus artistas y canciones favoritos en Wecodefy. Haz el taller de Nuxt en Wecodefest :)',
+            tweetUrl: 'https://github.com/cristinafsanz/taller-nuxt',
+            tweetVia: 'cristinafsanz',
         };
     },
     computed: {
