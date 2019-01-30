@@ -25,6 +25,12 @@ header {
     align-items: center;
 }
 .logo {
-    margin-left: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 700px) {
+    .logo {
+        margin-left: 2rem;
+    }
 }
 </style>

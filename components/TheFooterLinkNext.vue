@@ -27,10 +27,19 @@ export default {
 </script>
 
 <style>
+.footer-link-next {
+    display: none;
+}
 .footer-link-next__link {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-weight: bold;
+}
+@media (min-width: 700px) {
+    .footer-link-next {
+        display: flex;
+        margin-left: 2rem;
+    }
 }
 </style>

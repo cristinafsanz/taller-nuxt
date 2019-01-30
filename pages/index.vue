@@ -32,12 +32,12 @@ Flex container items inside main
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: #638de8;
 }
 h1 {
-    font-size: 7.5em;
+    font-size: 3em;
+    padding-top: 1rem;
     max-width: 60%;
     text-align: center;
     color: #d4f9f4;
@@ -53,5 +53,15 @@ h1 {
     color: #638de8;
     padding: 1.2rem;
     border-radius: 2rem;
+}
+@media (min-width: 700px) {
+    h1 {
+        font-size: 5.5em;
+    }
+}
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 7.5em;
+    }
 }
 </style>

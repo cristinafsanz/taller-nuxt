@@ -57,7 +57,14 @@ export default {
     align-items: center;
     font-weight: bold;
     /* Item from footer */
-    align-self: flex-start;
+    align-self: center;
     margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+@media (min-width: 700px) {
+    .footer-link-number {
+        align-self: flex-start;
+        margin-left: 2rem;
+    }
 }
 </style>

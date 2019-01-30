@@ -17,7 +17,7 @@
 <style scoped>
 /* Menú */
 nav {
-    align-self: flex-end;
+    align-self: center;
     margin-bottom: 1rem;
 }
 nav ul {
@@ -34,5 +34,11 @@ nav a {
 }
 nav a:hover {
     color: #555;
+}
+@media (min-width: 700px) {
+    nav {
+        align-self: flex-end;
+        margin-right: 2rem;
+    }
 }
 </style>

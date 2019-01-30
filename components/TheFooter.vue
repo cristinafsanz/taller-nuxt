@@ -1,7 +1,7 @@
 <template>
   <footer
     :style="{ backgroundColor: backgroundColor }"
-    :class="{'footer--right': !linksEnabled}">
+    :class="{'footer--only-nav': !linksEnabled}">
     <the-footer-link-number
       :show="linksEnabled"
       :show-previous-page="previousPage > 0"
@@ -105,11 +105,16 @@ export default {
 /* Container footer: links and nav */
 footer {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
 }
-footer.footer--right {
-    justify-content: flex-end;
+@media (min-width: 700px) {
+    footer {
+        flex-direction: row;
+        align-items: center;
+    }
+    footer.footer--only-nav {
+        justify-content: flex-end;
+    }
 }
 </style>

@@ -70,17 +70,20 @@ main {
     background-color: #ffc965;
 }
 h1 {
-    font-size: 7.5em;
+    font-size: 4em;
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 1rem;
 }
 .my-music-1-section {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .my-music-1-section__image {
-    max-width: 300px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    max-width: 80%;
 }
 .my-music-1-section__list {
     margin-left: 2rem;
@@ -95,14 +98,37 @@ h1 {
 }
 .my-music-1-section__artists-songs {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 .my-music-1-section__list--artists {
     margin-right: 2rem;
 }
+.my-music-1-section__list--songs {
+    margin-top: 1rem;
+}
 .my-music-1-section__list--artists p,
 .my-music-1-section__list--songs p {
     font-weight: 600;
     margin-bottom: 1rem;
+}
+@media (min-width: 1000px) {
+    h1 {
+        font-size: 7.5em;
+    }
+    .my-music-1-section {
+        flex-direction: row;
+    }
+    .my-music-1-section__image {
+        max-width: 300px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .my-music-1-section__artists-songs {
+        flex-direction: row;
+    }
+    .my-music-1-section__list--songs {
+        margin-top: 0;
+    }
 }
 </style>

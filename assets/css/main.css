@@ -20,7 +20,8 @@ Layout container: header, main, footer
 .container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
 }
 /*
 Header
@@ -29,17 +30,11 @@ header {
     height: 7rem;
 }
 /*
-Main 
+Main
 Item from container: get all space available
 */
 main {
     flex-grow: 1;
-}
-/*
-Footer
-*/
-footer {
-    height: 7rem;
 }
 
 /* Arrows with CSS: https://codepen.io/tu4mo/pen/BLyGRv */
@@ -64,4 +59,9 @@ footer {
     height: 16px;
     transform: rotate(45deg);
     margin-bottom: -5px;
+}
+@media (min-width: 700px) {
+    footer {
+        height: 7rem;
+    }
 }

@@ -112,23 +112,29 @@ main {
 }
 .my-music-2 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-/* Same width 2 items and 1/3 of the space */
+/* Same width 2 items */
 .my-music-2__jacket,
 .my-music-2__share {
-    flex-basis: 33%;
-    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 /* Jacket section */
 .my-music-2__jacket {
+    display: flex;
+    flex-direction: column;
     background-color: #000;
     color: #b79cc9;
-    display: flex;
     padding: 1.5rem;
     font-size: 1.2em;
     line-height: 1.4em;
+    align-items: center;
+}
+.my-music-2__image-genre {
+    align-self: center;
 }
 .my-music-2__image-genre img {
     max-width: 200px;
@@ -152,6 +158,9 @@ main {
     font-size: 2em;
     font-weight: bold;
 }
+.my-music-2__artists {
+    margin-top: 2rem;
+}
 .my-music-2__artists-songs {
     margin-left: 1.5rem;
 }
@@ -161,13 +170,47 @@ main {
     color: #fff;
 }
 .my-music-2__share h1 {
-    font-size: 6em;
+    font-size: 3em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 .my-music-2__share .my-music-2__share--description {
-    font-size: 1.5em;
+    font-size: 1em;
     margin-bottom: 1rem;
 }
 .twitter-share-button {
     text-align: center;
+}
+@media (min-width: 1000px) {
+    .my-music-2 {
+        flex-direction: row;
+    }
+    .my-music-2__jacket,
+    .my-music-2__share {
+        flex-basis: 45%;
+    }
+    .my-music-2__jacket {
+        flex-direction: row;
+    }
+    .my-music-2__image-genre {
+        align-self: auto;
+    }
+    .my-music-2__share h1 {
+        font-size: 6em;
+    }
+    .my-music-2__share .my-music-2__share--description {
+        font-size: 1.5em;
+    }
+    .my-music-2__artists {
+        margin-top: 0;
+    }
+}
+@media (min-width: 1400px) {
+    .my-music-2__jacket,
+    .my-music-2__share {
+        flex-basis: 33%;
+        margin-left: 0;
+        margin-right: 2rem;
+    }
 }
 </style>
