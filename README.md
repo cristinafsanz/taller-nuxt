@@ -25,8 +25,11 @@ Vamos a empezar a trabajar desde la rama [nuxt1](https://github.com/cristinafsan
 
 | Documentación                                             | Código                                                              |
 | --------------------------------------------------------- | ------------------------------------------------------------------- |
-| [Creación del layout de la aplicación con datos ficticios](md-files/md-instructions/1-layout/README.md)     | [Rama nuxt2](https://github.com/cristinafsanz/taller-nuxt/tree/nuxt2)    | 
-| [Conexión con el API de Spotify para recoger datos reales](md-files/md-instructions/2-spotify/README.md)     | [Rama nuxt3](https://github.com/cristinafsanz/taller-nuxt/tree/nuxt3)    | 
-| [Despliegue de la aplicación](md-files/md-instructions/3-despliegue/README.md)     | [Rama nuxt4](https://github.com/cristinafsanz/taller-nuxt/tree/nuxt4)    | 
+| [Creación del layout de la aplicación con datos ficticios](md-files/md-instructions/1-layout/README.md)     | [Rama nuxt2](https://github.com/cristinafsanz/taller-nuxt/tree/nuxt2)    |
+| [Conexión con el API de Spotify para recoger datos reales](md-files/md-instructions/2-spotify/README.md)     | [Rama nuxt3](https://github.com/cristinafsanz/taller-nuxt/tree/nuxt3)    |
+| [Despliegue de la aplicación](md-files/md-instructions/3-despliegue/README.md)     | [Rama nuxt4](https://github.com/cristinafsanz/taller-nuxt/tree/nuxt4)    |
 
+Agradecimientos
+===========
 
+He creado un fichero de [agradecimientos](md-files/agradecimientos.md) con gente que me ha ayudado a hacer este taller. También agradezco a la gente que venga al taller o lo haga por su cuenta y me dé un feedback constructivo. Es mi primer taller y lo he hecho lo mejor que he podido :)

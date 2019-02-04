@@ -22,9 +22,9 @@
     - [Get User's Top Artists and Tracks](https://developer.spotify.com/console/get-current-user-top-artists-and-tracks/?type=artists&time_range=&limit=&offset=)
 - [x] Implicit Grant: [Example](https://gist.github.com/igorPhelype/68239ecab9afcc50230ce0c61c3bac2f), [Authorization Guide](https://developer.spotify.com/documentation/general/guides/authorization-guide/).
 
-[ ] Rama en GitHub por cada funcionalidad de la aplicación (nuxt1, ...nuxtn):
-- [x] Rama "nuxt2": Rama inicial con las dependencias necesarias para la aplicación.
-- [ ] Rama "nuxt2": Componentes y layout con parte estática. Global CSS (metodología BEM). Nuxt-link. Transición entre páginas. SEO y meta tags. Mostrar code-splitting.
+[x] Rama en GitHub por cada funcionalidad de la aplicación (nuxt1, ...nuxtn):
+- [x] Rama "nuxt1": Rama inicial con las dependencias necesarias para la aplicación.
+- [x] Rama "nuxt2": Componentes y layout con parte estática. Global CSS (metodología BEM). Nuxt-link. Transición entre páginas. SEO y meta tags. Mostrar code-splitting.
     - [x] Imagen Wecodefy: Transparente.
     - [x] Prueba de estructura del layout.
     - [x] Global CSS.
@@ -36,7 +36,7 @@
     - [x] Añadir SEO y meta tags.
     - [x] Probar los linters de JS y CSS. Comprobar que el indentado es siempre el mismo para HTML, CSS, JavaScript.
 
-- [ ] Rama "nuxt3: Spotify API. Usar object.freeze (vue tip).
+- [x] Rama "nuxt3: Spotify API. Usar object.freeze (vue tip).
     - [x] Artists y tracks en `my-music-1` y `my-music-2`.
     - [x] Top Genre en `my-music-2`: palabra más repetida.
     - [x] Imagen top artist.
@@ -46,47 +46,45 @@
     - [x] Llamar a la api de Spotify (`medium_term` y `long_term`) en la home y guardar datos en Vuex para usarlo en cada página. Cuando se recarga se borran los datos también.
     - [x] A veces no cambia de página bien después de recargar
 
-- [ ] Rama "nuxt4":
+- [x] Rama "nuxt4":
     - [x] Ver código generado estático en dist con el pre rendering.
     - [x] Despliegue estático GitHub Pages.
     - [x] Añadir los redirects de la aplicación desplegada en Spotify Developers.
     - [x] Compartir en twitter `https://cristinafsanz.github.io/taller-nuxt/my-music-2`: Descubre tus artistas y canciones favoritos en WeCodefy.
         - Url la de la página del taller para que se anime la gente a hacerlo
 
-[ ] Explicación Nuxt en README:
-- [ ] Mostrar el "Nuxtjs-Cheat-Sheet" creado por [Vue Mastery](https://www.vuemastery.com/nuxt-cheat-sheet/).
-- [ ] Qué es Nuxt: framework Vue. SEO friendly. Mejora performance.
-- [ ] Modos Pre-render y SSR.
-- [ ] Muestra en Chrome Dev tools de parte de SEO y code-splitting.
-- [ ] Lo que no vamos a ver (en cursos de Nuxt en Vue School):
-    - [ ] Async data / fetch.
-    - [ ] Dynamic routes.
-    - [ ] Despliegue Heroku.
-- [ ] Mostrar code-splitting.
+- [x] Añadir versiones de node y npm y cómo lo instalé con Windows
 
-[ ] Hacer la misma aplicación en Codesandbox para apuntar los pasos en README.
-    - Crear cuenta en [CodeSandbox](https://codesandbox.io/) y hacer un fork de [codesandbox-nuxt](https://codesandbox.io/s/github/nuxt/codesandbox-nuxt).
+- [ ] Explicación Nuxt en README.
 
-[ ] Añadir en instalación explicación sobre VSCode y Vetur de Vuevixens: https://vuevixens.github.io/docs/workshop/nanos/nano3.html#snippets.
+- [ ] Hacer la misma aplicación en Codesandbox para apuntar los pasos en README.
 
-[ ] Enlace a la demo en GitHub Pages para mostrar en el taller (local con VueDevTools y GitHub Pages sin VueDevTools).
+- Crear cuenta en [CodeSandbox](https://codesandbox.io/) y hacer un fork de [codesandbox-nuxt](https://codesandbox.io/s/github/nuxt/codesandbox-nuxt), añadiendo las librerías que uso (spotify-api, eslint y push-dir).
 
-[ ] Revisar versión final del README de master y nuxt1, debería contener lo último con todos los enlaces de las instrucciones, junto con la última versión de la instalación (rama nuxtn).
+- [ ] Revisar versión final del README de master y nuxt1, debería contener lo último con todos los enlaces de las instrucciones, junto con la última versión de la instalación (rama nuxtn).
 
-[ ] ¿Por qué stylelint no me marca css al ejecutar `npm run lint:css`?
+## Días antes
 
-## Opcional
+- [ ] Cargar el ratón
 
-[ ] ¿Usar algún plugin?
+- [ ] Pedir adaptador
 
-[ ] ¿Proxy para API?
+- [ ] Documentación actualizada en todas las ramas
 
-[ ] Animaciones CSS entre páginas
+- [ ] Ensayo introducción y empezar a hacer la aplicación (bajando rama y en Codesandbox)
 
-## Despliegue
+- [ ] Versión código y documentación en local del repo + en 1 usb + GitHub.
 
-- Añadir en el Dashboard de spotify la redirect uris de producción.
+## Día antes
+
+- [ ] Llevar mochila: ordenador + cargador + ratón + adaptador + pendrive
+
+- [ ] Probar a poner en pantalla completa (Ctr + Cmd + F) + tamaño texto (Cmd+) + pantalla completa VS Code (Ctrl + B)
+
+- [ ] Buscar colgantes de otras conferencias
 
 ## Día del taller
 
-[ ] Versión en local del repo + en 1 usb + GitHub.
+- [ ] Mutear ordenador
+
+- [ ] Cargar ordenador durante el taller.
