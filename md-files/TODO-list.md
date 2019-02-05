@@ -55,11 +55,11 @@
 
 - [x] Añadir versiones de node y npm y cómo lo instalé con Windows
 
-- [ ] Explicación Nuxt en README.
+- [x] Explicación Nuxt en README.
 
 - [ ] Hacer la misma aplicación en Codesandbox para apuntar los pasos en README.
 
-- Crear cuenta en [CodeSandbox](https://codesandbox.io/) y hacer un fork de [codesandbox-nuxt](https://codesandbox.io/s/github/nuxt/codesandbox-nuxt), añadiendo las librerías que uso (spotify-api, eslint y push-dir).
+    - Crear cuenta en [CodeSandbox](https://codesandbox.io/) y hacer un fork de [codesandbox-nuxt](https://codesandbox.io/s/github/nuxt/codesandbox-nuxt), añadiendo las librerías que uso (spotify-api, eslint y push-dir).
 
 - [ ] Revisar versión final del README de master y nuxt1, debería contener lo último con todos los enlaces de las instrucciones, junto con la última versión de la instalación (rama nuxtn).
 

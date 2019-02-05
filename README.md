@@ -18,6 +18,11 @@ Previo al taller
 
 Seguir los pasos del fichero de [instalación](md-files/md-instructions/instalacion.md).
 
+Introducción de Nuxt
+===========
+
+[¿Qué es Nuxt?](md-files/nuxt.md)
+
 Taller
 ===========
 
