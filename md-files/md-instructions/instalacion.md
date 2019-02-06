@@ -14,11 +14,12 @@
 
 ## 2) Instalar herramientas
 
-- Instalar [npm](https://www.npmjs.com/get-npm).
-- Crear cuenta en [GitHub](https://github.com/).
-- Instalar [Git](https://tutorial.djangogirls.org/es/installation/#instalar-git).
-- Instalar un editor de código (ej. [Visual Studio Code](https://code.visualstudio.com/)). Instalar extensión [Vetur](https://github.com/vuejs/vetur) o similar para programar con Vue.
+- Tener instalado [Node y npm](https://www.npmjs.com/get-npm).
+- Tener cuenta en [GitHub](https://github.com/).
+- Tener instalado [Git](https://tutorial.djangogirls.org/es/installation/#instalar-git).
+- Tener instalado un editor de código (ej. [Visual Studio Code](https://code.visualstudio.com/)). Instalar extensión [Vetur](https://github.com/vuejs/vetur) o similar para programar con Vue.
 - Instalar la extensión de Chrome [Vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en).
+- [Opcional] Instalar la extensión de Chrome [Octotree](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc) para acceder a las instrucciones más fácilmente.
 
 ## 3) Bajar el proyecto
 
@@ -34,3 +35,29 @@
 - Deberías ver una aplicación como ésta:
 
 ![Página inicial](../md-images/home-page.jpg?raw=true)
+
+## Nota
+
+Si no arranca bien la aplicación, puede ser un problema de versiones de Node o npm.
+
+- En Mac las versiones que tengo instaladas en el momento de hacer el taller son Node v10.13.0 y npm v6.4.1.
+
+- En Windows 10 realicé los siguientes pasos para tener versiones actualizadas:
+
+    - Arrancar terminal:
+        - Ejecutar `wsl` y tienes zsh
+    - Actualizar npm:
+        ```
+        npm cache clean
+        npm update -g
+        ```
+    - Instalar versión Node más actual:
+        - Instalar [nvm](https://github.com/creationix/nvm/blob/master/README.md) para usar una versión concreta de Node:
+        ```
+        curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+        source ~/.nvm/nvm.sh
+        nvm install stable
+        nvm use stable
+        ```
+    - Versiones  Node (ej. 11.9.0) y npm (6.5.0)
+    - Volver al paso 3) para hacer de nuevo `npm install` y `npm run dev`.
