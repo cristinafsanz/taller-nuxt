@@ -7,17 +7,21 @@ Puedes hacer un fork de `https://github.com/cristinafsanz/taller-nuxt` y partir 
 
 Crear una nueva rama `nuxt4` a partir de la anterior y cambiar el clientId por el tuyo en `mixins/spotify-api.js`.
 
-Ejecutar en la raíz del proyecto: `npm run generate`. En mi caso he quitado de `.gitignore` el directorio `dist` para mostrarlo en el repositorio durante el taller.
+En mi caso he quitado de `.gitignore` el directorio `dist` para mostrarlo en el repositorio durante el taller.
 
 ## Despliegue en [GitHub Pages](https://nuxtjs.org/faq/github-pages/)
 
-- Añadir como router base el nombre del repo en `nuxt.config.js`:
+- Añadir como router base el nombre del repo en `nuxt.config.js` para desplegar:
 
 ```
-export default {
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
     base: '/taller-nuxt/'
   }
+} : {}
+
+export default {
+  ...routerBase
 }
 ```
 
@@ -26,8 +30,6 @@ export default {
 ```
 npm install push-dir --save-dev
 ```
-
-
 
 - Añadir script en `package.json` para desplegar en gh-pages:
 
@@ -48,6 +50,7 @@ En mi caso son:
 - Ejecutar:
 
 ```
+npm run generate
 npm run deploy
 ```
 
