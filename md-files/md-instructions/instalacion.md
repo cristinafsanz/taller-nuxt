@@ -23,7 +23,7 @@
 
 ## 3) Bajar el proyecto
 
-- Clonar el repositorio en local: `git clone https://github.com/cristinafsanz/taller-nuxt.git`
+- Clonar el repositorio en local: `git clone https://github.com/cristinafsanz/taller-nuxt.git` (también puedes hacer un fork del repositorio y clonarlo para subir tu código y desplegarlo durante el taller).
 - Entrar en el proyecto: `cd taller-nuxt`
 - Situarse en la rama de inicio del taller: `git checkout nuxt1`
 - Instalar las dependencias: `npm install`
