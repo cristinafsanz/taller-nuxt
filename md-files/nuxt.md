@@ -33,11 +33,13 @@ Nuxt
 
 - Mucha `magia` por detrás. Por ejemplo creas una página y te crea el router automáticamente.
 
-- Error al usar elementos del lado del cliente: `document` is not defined.
+- Error al usar elementos del lado del cliente: `document` is not defined / `window` is not defined.
 
     - Usar `if (process.client)`
 
-    - Etiqueta `<no-ssr>`
+    - Etiqueta `<no-ssr>` para elementos html que sólo se ejecuten en cliente.
+
+- Entender métodos como `asyncData` que se ejecutan en el lado del servidor antes de cargarse la página.
 
 ## Casos de uso
 

@@ -203,4 +203,6 @@ export default {
 </script>
 ```
 
-El problema es que si se recarga la página, el asyncData se haría desde el lado del servidor y como vamos a crear una aplicación solo del lado del cliente, nos devuelve datos vacíos.
+El problema es que si se recarga la página, los datos se resetean y no tenemos la información de Spotify.
+
+Al recargar la página, `asyncData` se ejecuta en el lado del servidor y como accedemos a `window` al utilizar el API de spotify, sólo lo estamos ejecutando en el lado del cliente.
